@@ -2,11 +2,11 @@ import { assets } from "@/assets/assetimports";
 import { Link, useLocation } from "react-router-dom";
 import {
   NavigationMenu,
+  NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
-
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -15,6 +15,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { CiMenuFries } from "react-icons/ci";
+
 const Navbar = () => {
   const links = [
     { title: "Home", url: "/" },
@@ -60,7 +61,7 @@ const Navbar = () => {
       <div className="md:hidden">
         <DropdownMenu>
           <DropdownMenuTrigger className="text-gray-700 hover:text-blue-600">
-            <CiMenuFries />
+            <CiMenuFries size={30} />
           </DropdownMenuTrigger>
 
           <DropdownMenuContent
