@@ -2,11 +2,11 @@ import { assets } from "@/assets/assetimports";
 import { Link, useLocation } from "react-router-dom";
 import {
   NavigationMenu,
-  NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-} from "@/components/ui/navigation-menu";
+} from "@/Components/ui/navigation-menu";
+
 import {
   DropdownMenu,
   DropdownMenuContent,
