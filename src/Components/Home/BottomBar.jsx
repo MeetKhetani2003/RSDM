@@ -28,7 +28,7 @@ const BottomBar = () => {
 
   return (
     <div className="border-t border-white">
-      <div className="max-w-7xl mx-auto flex items-center justify-between ">
+      <div className="max-w-5xl mx-auto flex items-center justify-between ">
         {/* Call Now Button */}
         <div className="flex justify-center">
           <Link to={"tel:7801931135"}>
