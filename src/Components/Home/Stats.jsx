@@ -2,7 +2,7 @@ import { UsersRound } from "lucide-react";
 import { FaBuilding, FaHandshakeAngle, FaUsers } from "react-icons/fa6";
 import { TbUserScreen } from "react-icons/tb";
 import CountUp from "react-countup";
-import { Card, CardHeader, CardContent } from "@/components/ui/card";
+import { Card, CardHeader, CardContent } from "../../Components/ui/card";
 
 const StatCard = ({ IconComponent, count, suffix, description }) => {
   return (
