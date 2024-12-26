@@ -29,6 +29,9 @@ const LogoCard = ({ logo }) => (
 export function LogoMarquee() {
   return (
     <div className="relative flex-col flex  w-full items-center justify-center overflow-hidden rounded-lg border bg-white dark:bg-gray-900 gap-8">
+      <h1 className="mt-10 font-openSans font-bold text-blue-950 text-2xl text-center px-8">
+        Students Placed and Hired in Companies
+      </h1>
       {/* First Marquee Row */}
       <Marquee className="[--duration:20s]">
         {companyLogos.map((logo, index) => (

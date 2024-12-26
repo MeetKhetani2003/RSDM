@@ -32,8 +32,11 @@ const BottomBar = () => {
         {/* Call Now Button */}
         <div className="flex justify-center">
           <Link to={"tel:7801931135"}>
-            <button className="flex text-white gap-2 items-center">
-              <MdOutlineCall /> Call Now
+            <button className="flex text-white gap-2 items-center border-r border-white px-2">
+              <span className="hidden md:block">
+                <MdOutlineCall />
+              </span>
+              Call Now
             </button>
           </Link>
         </div>
@@ -42,7 +45,10 @@ const BottomBar = () => {
         <div className="flex justify-center">
           <Link to={"https://wa.me/7801931135"}>
             <button className="flex text-white gap-2 items-center">
-              <FaWhatsapp /> Leave a WhatsApp Message
+              <span className="hidden md:block">
+                <FaWhatsapp />
+              </span>
+              Leave a WhatsApp Message
             </button>
           </Link>
         </div>
@@ -50,8 +56,11 @@ const BottomBar = () => {
         {/* Inquire Now Dialog */}
         <Dialog>
           <DialogTrigger asChild>
-            <button className="flex text-white bg-green-500 px-4 py-2 gap-2 items-center hover:bg-green-700">
-              <GoQuestion /> Inquire Now
+            <button className="flex text-white bg-green-500 px-4 py-2 gap-2 items-center hover:bg-green-700 border-l border-white">
+              <span className="hidden md:block">
+                <GoQuestion />
+              </span>
+              Inquire Now
             </button>
           </DialogTrigger>
           <DialogContent className="bg-white rounded-lg p-4 mt-10 max-w-md mx-auto">

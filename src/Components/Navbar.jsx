@@ -66,9 +66,9 @@ const Navbar = () => {
             <DropdownMenuContent
               side="bottom"
               align="end"
-              className="bg-white rounded-lg shadow-lg p-4 w-48 z-10"
+              className="bg-white rounded-lg shadow-lg p-4 w-48 z-10 mt-8"
             >
-              <div className="space-y-4">
+              <div className="space-y-4 ">
                 {links.map((link, i) => (
                   <DropdownMenuItem key={i}>
                     <Link
@@ -77,7 +77,7 @@ const Navbar = () => {
                         location.pathname === link.url
                           ? "bg-blue-950 text-white"
                           : "text-gray-700 hover:text-blue-950"
-                      } block px-4 py-2 rounded-md text-lg transition-all duration-300`}
+                      } block px-4 py-2 rounded-md text-lg  transition-all duration-300`}
                     >
                       {link.title}
                     </Link>
