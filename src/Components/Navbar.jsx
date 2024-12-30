@@ -11,12 +11,15 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
 } from './ui/navigation-menu';
+import React, { useState } from 'react';
 import { CiMenuFries } from 'react-icons/ci';
 import { Link, useLocation } from 'react-router-dom';
 
 import { assets } from '@/assets/assetimports';
 
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   const links = [
     { title: 'Home', url: '/' },
     { title: 'Courses', url: '/courses' },
@@ -26,6 +29,10 @@ const Navbar = () => {
   ];
 
   const location = useLocation();
+
+  React.useEffect(() => {
+    setMenuOpen(false); // Close the menu when the route changes
+  }, [location.pathname]);
 
   return (
     <div className='sticky top-0 z-50 bg-white shadow-md'>
@@ -42,7 +49,6 @@ const Navbar = () => {
               {links.map((link, i) => (
                 <NavigationMenuItem key={i}>
                   <Link
-                    as={Link}
                     to={link.url}
                     className={`px-4 py-2 rounded-md text-lg transition-all duration-300 ${
                       location.pathname === link.url
@@ -60,8 +66,11 @@ const Navbar = () => {
 
         {/* Mobile Menu Dropdown */}
         <div className='md:hidden'>
-          <DropdownMenu>
-            <DropdownMenuTrigger className='text-gray-700 hover:text-blue-950'>
+          <DropdownMenu open={menuOpen} onOpenChange={setMenuOpen}>
+            <DropdownMenuTrigger
+              className='text-gray-700 hover:text-blue-950'
+              onClick={() => setMenuOpen((prev) => !prev)}
+            >
               <CiMenuFries size={30} />
             </DropdownMenuTrigger>
 
@@ -80,6 +89,7 @@ const Navbar = () => {
                           ? 'bg-blue-950 text-white shadow-md'
                           : 'text-gray-700 hover:bg-blue-100 hover:text-blue-950'
                       }`}
+                      onClick={() => setMenuOpen(false)}
                     >
                       {link.title}
                     </Link>
