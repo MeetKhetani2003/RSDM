@@ -1,12 +1,20 @@
+import image1 from './Abhi Vadaliya.jpg';
 import ai from './ailinks.png';
+import image2 from './Avni Parmar.jpg';
 import basicP from './basicP.svg';
+import bgVid from './bgvid.mp4';
 import certi from './certi.svg';
 import certificate from './cirtificate.webp';
 import cohortP from './cohortP.svg';
+import image3 from './Devangi Ladola.jpg';
 import digital from './digital.webp';
 import digitalAbout from './digitalAbout.webp';
+import image4 from './hari om.jpg';
 import hero from './homeBg.png';
+import image5 from './Krishna Tank.jpg';
 import logo from './logo.png';
+import image6 from './Mital  Bhimani.png';
+import representitive from './representitives.webp';
 import Tool1 from './Tool1.png';
 import Tool10 from './Tool10.svg';
 import Tool11 from './Tool11.svg';
@@ -40,4 +48,12 @@ export const assets = {
   cohortP,
   certi,
   certificate,
+  bgVid,
+  image1,
+  image2,
+  image3,
+  image4,
+  image5,
+  image6,
+  representitive,
 };

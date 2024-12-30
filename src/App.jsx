@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Course from './page/Courses/Course';
 import Home from './page/Home/Home';
+import Placements from './page/Placements/Placements';
 import Layout from './Components/Layout';
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
         <Route path='/' element={<Layout />}>
           <Route index element={<Home />} />
           <Route path='/courses' element={<Course />} />
+          <Route path='/placements' element={<Placements />} />
         </Route>
       </Routes>
     </Router>
