@@ -40,7 +40,7 @@ const CardComponent = ({ title, content }) => {
 };
 const AboutDigital = () => {
   return (
-    <div className='bg-white py-8'>
+    <div className='bg-white py-8 px-4'>
       <div className='max-w-7xl mx-auto '>
         <h1 className='text-4xl font-extrabold font-dmSans leading-snug text-gray-900 text-center my-7 md:my-14'>
           About Digital Marketing With Ai

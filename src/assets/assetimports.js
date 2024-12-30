@@ -1,4 +1,8 @@
 import ai from './ailinks.png';
+import basicP from './basicP.svg';
+import certi from './certi.svg';
+import certificate from './cirtificate.webp';
+import cohortP from './cohortP.svg';
 import digital from './digital.webp';
 import digitalAbout from './digitalAbout.webp';
 import hero from './homeBg.png';
@@ -32,4 +36,8 @@ export const assets = {
   Tool9,
   Tool10,
   Tool11,
+  basicP,
+  cohortP,
+  certi,
+  certificate,
 };

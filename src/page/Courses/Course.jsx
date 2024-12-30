@@ -1,11 +1,14 @@
 import React from 'react';
 
 import { assets } from '@/assets/assetimports';
+import { Faq } from '@/Components/Course/Faq';
 import AboutDigital from '@/Components/Course/AboutDigital';
 import BreadcrumbLayout from '@/Components/BreadCrumbLayout';
+import Certificate from '@/Components/Course/Certificate';
 import CourseDetails from '@/Components/Course/CourseDetails';
 import CourseOfferings from '@/Components/Course/CourseOfferings';
 import Hero from '@/Components/Course/Hero';
+import PriceCard from '@/Components/Course/PriceCard';
 import ToolsMarquee from '@/Components/Course/Tools';
 
 const Course = () => {
@@ -39,6 +42,9 @@ const Course = () => {
       <AboutDigital />
       <CourseOfferings />
       <ToolsMarquee />
+      <PriceCard />
+      <Certificate />
+      <Faq />
     </div>
   );
 };

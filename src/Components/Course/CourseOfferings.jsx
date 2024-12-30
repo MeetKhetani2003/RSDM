@@ -47,7 +47,7 @@ const CourseOfferings = () => {
   ];
 
   return (
-    <div className='container max-w-7xl mx-auto py-8'>
+    <div className='container max-w-7xl mx-auto py-8 px-4'>
       <h2 className='text-4xl font-dmSans font-bold text-center mb-8'>
         Course Offerings
       </h2>
