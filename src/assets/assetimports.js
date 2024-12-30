@@ -14,6 +14,7 @@ import hero from './homeBg.png';
 import image5 from './Krishna Tank.jpg';
 import logo from './logo.png';
 import image6 from './Mital  Bhimani.png';
+import mobileBg from './mobileBg.mp4';
 import representitive from './representitives.webp';
 import Tool1 from './Tool1.png';
 import Tool10 from './Tool10.svg';
@@ -56,4 +57,5 @@ export const assets = {
   image5,
   image6,
   representitive,
+  mobileBg,
 };

@@ -1,13 +1,12 @@
-import { LucideLaptopMinimalCheck, UsersRound } from 'lucide-react';
 import CountUp from 'react-countup';
 import { FaBuilding, FaHandshakeAngle, FaUsers } from 'react-icons/fa6';
-import { TbUserScreen } from 'react-icons/tb';
+import { TbUserScreen, TbWorldDollar } from 'react-icons/tb';
 
 import { Card, CardHeader, CardContent } from '../../Components/ui/card';
 
 const StatCard = ({ IconComponent, count, suffix, description }) => {
   return (
-    <div className='flex flex-col items-center justify-center  transition-shadow duration-300 text-blue-950 gap-2 py-4  md:gap-1'>
+    <div className='flex flex-col items-center justify-center  transition-shadow duration-300 text-blue-950 gap-2 py-4  md:gap-1 border border-blue-900 shadow-lg  shadow-gray-200'>
       <p className='text-4xl'>{IconComponent && <IconComponent />}</p>
       <div className='text-center font-quickSand'>
         <h3 className='flex items-center justify-center text-xl font-bold'>
@@ -17,9 +16,7 @@ const StatCard = ({ IconComponent, count, suffix, description }) => {
           <span className='ml-1'>{suffix}</span>
         </h3>
       </div>
-      <p className='text-base font-medium text-center  whitespace-nowrap'>
-        {description}
-      </p>
+      <p className='text-base font-medium text-center'>{description}</p>
     </div>
   );
 };
@@ -27,7 +24,7 @@ const StatCard = ({ IconComponent, count, suffix, description }) => {
 const Stats = () => {
   return (
     <div className=' px-4 py-4 '>
-      <div className='max-w-7xl mx-auto grid gap-2 grid-cols-1 sm:grid-cols-2 lg:grid-cols-6  border border-blue-400'>
+      <div className='max-w-7xl mx-auto grid gap-2 grid-cols-1 sm:grid-cols-2 lg:grid-cols-6  '>
         <StatCard
           IconComponent={FaUsers}
           count={100}
@@ -35,7 +32,7 @@ const Stats = () => {
           description='Placement Opportunity'
         />
         <StatCard
-          IconComponent={LucideLaptopMinimalCheck}
+          IconComponent={TbWorldDollar}
           count={100}
           suffix='%'
           description='Live Freelancing Opportunity'
