@@ -1,4 +1,6 @@
 import image1 from './Abhi Vadaliya.jpg';
+import about from './about.jpeg';
+import aboutus from './aboutus.jpg';
 import ai from './ailinks.png';
 import image2 from './Avni Parmar.jpg';
 import basicP from './basicP.svg';
@@ -55,7 +57,9 @@ export const assets = {
   image3,
   image4,
   image5,
+  aboutus,
   image6,
   representitive,
   mobileBg,
+  about,
 };
