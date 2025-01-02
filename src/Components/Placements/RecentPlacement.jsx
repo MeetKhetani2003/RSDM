@@ -21,8 +21,10 @@ const RecentPlacement = () => {
   ];
 
   return (
-    <div className='relative overflow-hidden max-w-7xl mx-auto py-8'>
-      <h2 className='text-4xl font-bold text-center mb-8'>RECENT PLACEMENTS</h2>
+    <div className='relative overflow-hidden max-w-7xl mx-auto py-8 my-6'>
+      <h2 className='text-4xl font-dmSans font-semibold text-center py-9'>
+        Recent Placemets
+      </h2>
       <Carousel
         plugins={[
           Autoplay({

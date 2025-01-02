@@ -4,12 +4,14 @@ import aboutus from './aboutus.jpg';
 import ai from './ailinks.png';
 import image2 from './Avni Parmar.jpg';
 import basicP from './basicP.svg';
+import bgImg from './bgimg.png';
 import bgVid from './bgvid.mp4';
 import certi from './certi.svg';
 import certificate from './cirtificate.webp';
 import cohortP from './cohortP.svg';
 import image3 from './Devangi Ladola.jpg';
 import digital from './digital.webp';
+import digital2 from './digital2.jpg';
 import digitalAbout from './digitalAbout.webp';
 import image4 from './hari om.jpg';
 import hero from './homeBg.png';
@@ -33,6 +35,7 @@ import Tool9 from './Tool9.svg';
 export const assets = {
   logo,
   hero,
+  bgImg,
   ai,
   digital,
   digitalAbout,
@@ -46,6 +49,7 @@ export const assets = {
   Tool8,
   Tool9,
   Tool10,
+  digital2,
   Tool11,
   basicP,
   cohortP,

@@ -22,8 +22,8 @@ const Freelancers = () => {
 
   return (
     <div className='relative overflow-hidden max-w-7xl mx-auto py-8'>
-      <h2 className='text-4xl font-bold text-center mb-8'>
-        STUDENTS AS A FREELANCER
+      <h2 className='text-4xl font-dmSans font-semibold text-center py-6'>
+        Stundents As a Freelancer
       </h2>
       <Carousel
         plugins={[

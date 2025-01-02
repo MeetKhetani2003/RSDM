@@ -7,7 +7,7 @@ import { Card, CardHeader, CardContent } from '../../Components/ui/card';
 
 export const StatCard = ({ IconComponent, count, suffix, description }) => {
   return (
-    <Card className='flex flex-col items-center justify-center px-3  shadow-lg hover:shadow-xl transition-shadow duration-300 text-blue-950'>
+    <Card className='flex flex-col items-center z-40 justify-center px-3  shadow-lg hover:shadow-xl transition-shadow duration-300 text-blue-950'>
       <CardHeader className='text-5xl'>
         {IconComponent && <IconComponent />}
       </CardHeader>
@@ -26,7 +26,7 @@ export const StatCard = ({ IconComponent, count, suffix, description }) => {
 
 const Stats = () => {
   return (
-    <div className='mt-12'>
+    <div className='mt-12 z-50'>
       {/* <h1 className="text-center text-4xl font-dmSans  font-semibold tracking-wider">
         Our Facts and Figures
       </h1> */}
