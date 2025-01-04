@@ -14,7 +14,7 @@ const AboutCourse = () => {
         <div className='flex-1'>
           <img height={1000} src={assets.digital2} alt='d2' />
         </div>
-        <div className='font-monsterate text-gray-600 text-wrap space-y-4 md:w-1/2 text-base font-medium'>
+        <div className='font-monsterate text-gray-600 text-wrap text-justify space-y-4 md:w-1/2 text-base font-medium'>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae
             quibusdam cumque consectetur repellendus veritatis, repudiandae

@@ -3,6 +3,7 @@ import Hero from '@/Components/Home/Hero';
 import RecentPlacement from '@/Components/Placements/RecentPlacement';
 import Representitive from '@/Components/Placements/Representitive';
 import Stats from '@/Components/Home/Stats';
+import Welcome from '@/Components/Home/Welcome';
 
 import AboutCourse from '../../Components/Home/AboutCourse';
 import LogoMarquee from '../../Components/Home/Highlights';
@@ -13,6 +14,7 @@ const Home = () => {
       <Hero />
       {/* <Stats /> */}
       <LogoMarquee />
+      <Welcome />
       <AboutCourse />
       <RecentPlacement />
       <Freelancers />

@@ -4,6 +4,7 @@ import aboutus from './aboutus.jpg';
 import ai from './ailinks.png';
 import image2 from './Avni Parmar.jpg';
 import basicP from './basicP.svg';
+import benifits from './benifits.jpg';
 import bgImg from './bgimg.png';
 import bgVid from './bgvid.mp4';
 import certi from './certi.svg';
@@ -31,12 +32,15 @@ import Tool6 from './Tool6.svg';
 import Tool7 from './Tool7.svg';
 import Tool8 from './Tool8.svg';
 import Tool9 from './Tool9.svg';
+import welcome from './welcome.avif';
 
 export const assets = {
   logo,
   hero,
   bgImg,
+  benifits,
   ai,
+  welcome,
   digital,
   digitalAbout,
   Tool2,
