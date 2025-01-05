@@ -8,7 +8,13 @@ import { assets } from '@/assets/assetimports';
 
 import { Card, CardContent, CardHeader } from '../ui/card';
 
-const StatCard = ({ IconComponent, count, color, suffix, description }) => {
+export const StatCard = ({
+  IconComponent,
+  count,
+  color,
+  suffix,
+  description,
+}) => {
   return (
     <Card className='flex flex-col border border-blue-300 items-center w-full justify-center px-3  shadow-lg hover:shadow-blue-100 hover:shadow-xl transition-shadow duration-300 text-blue-950'>
       <CardHeader className={`${color ? color : ''} text-5xl`}>
@@ -27,7 +33,7 @@ const StatCard = ({ IconComponent, count, color, suffix, description }) => {
   );
 };
 
-const CardComponent = ({ title, content }) => {
+export const CardComponent = ({ title, content }) => {
   return (
     <div>
       <div className='flex items-center gap-3 font-semibold font-dmSans  text-lg'>

@@ -2,6 +2,7 @@ import React from 'react';
 
 import { assets } from '@/assets/assetimports';
 import { Faq } from '@/Components/Course/Faq';
+import { Projects } from '@/Components/Home/Projects';
 import AboutDigital from '@/Components/Course/AboutDigital';
 import BreadcrumbLayout from '@/Components/BreadCrumbLayout';
 import Certificate from '@/Components/Course/Certificate';
@@ -43,6 +44,7 @@ const Course = () => {
       <CourseOfferings />
       <ToolsMarquee />
       <PriceCard />
+      <Projects />
       <Certificate />
       <Faq />
     </div>

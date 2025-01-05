@@ -11,7 +11,7 @@ const Welcome = () => {
       <h1 className='w-full mx-auto text-center font-semibold font-dmSans my-10 text-4xl'>
         Welcome to RSDM
       </h1>
-      <div className='max-w-7xl gap-8 mx-auto flex flex-col px-4 md:flex-row items-center'>
+      <div className='max-w-7xl gap-8 mx-auto flex flex-col-reverse px-4 md:flex-row items-center'>
         <div className='font-monsterate text-gray-600 text-wrap text-justify space-y-4 md:w-1/2 text-base font-medium'>
           <p>
             Welcome to RSDM Institute, a premier educational institution

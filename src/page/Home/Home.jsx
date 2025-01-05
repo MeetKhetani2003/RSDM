@@ -1,3 +1,5 @@
+import { Projects } from '@/Components/Home/Projects';
+import Benifits from '@/Components/Home/Benifits';
 import Freelancers from '@/Components/Placements/Freelancers';
 import Hero from '@/Components/Home/Hero';
 import RecentPlacement from '@/Components/Placements/RecentPlacement';
@@ -16,6 +18,9 @@ const Home = () => {
       <LogoMarquee />
       <Welcome />
       <AboutCourse />
+      <Projects />
+
+      <Benifits />
       <RecentPlacement />
       <Freelancers />
       <Representitive />
