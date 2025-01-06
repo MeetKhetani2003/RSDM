@@ -10,7 +10,7 @@ const Benefits = () => {
     <div className='bg-white py-8 px-4'>
       <div className='max-w-7xl mx-auto'>
         <h1 className='text-4xl font-bold leading-snug text-gray-900 text-center my-7 md:my-14'>
-          Benefits With RSDM
+          Benefit With RSDM
         </h1>
         <div className='flex flex-col-reverse md:flex-row items-center justify-center px-4 md:px-8'>
           <div className='w-full'>

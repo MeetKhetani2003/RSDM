@@ -48,9 +48,13 @@ export function Projects() {
 
   return (
     <div className='max-w-7xl mx-auto px-4'>
-      <h1 className='text-4xl font-semibold font-openSans text-center my-6'>
-        Our Projects
-      </h1>
+      <p className='font-semibold font-monsterate text-xl my-6'>
+        Our digital marketing training program is completely{' '}
+        <strong>Industry-led </strong> and task oriented. Multiple{' '}
+        <strong>Case studies </strong>
+        and <strong>live projects</strong> providing practical inside and
+        helping effective strategies.
+      </p>
       <section className='flex flex-wrap gap-8 justify-center p-8'>
         {projects.map((benefit, index) => (
           <Card

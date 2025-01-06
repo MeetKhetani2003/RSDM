@@ -33,9 +33,9 @@ const Course = () => {
         <Hero />
 
         {/* EMI Information */}
-        <div className='max-w-7xl mx-auto pl-7 py-4 font-openSans text-gray-500 text-md font-semibold'>
+        {/* <div className='max-w-7xl mx-auto pl-7 py-4 font-openSans text-gray-500 text-md font-semibold'>
           <p>EMI options available</p>
-        </div>
+        </div> */}
 
         <CourseDetails courseDetails={courseDetailsData} />
       </div>
@@ -43,8 +43,8 @@ const Course = () => {
       <AboutDigital />
       <CourseOfferings />
       <ToolsMarquee />
-      <PriceCard />
       <Projects />
+      <PriceCard />
       <Certificate />
       <Faq />
     </div>

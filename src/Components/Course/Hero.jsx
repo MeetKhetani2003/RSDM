@@ -39,10 +39,14 @@ const Hero = () => {
             Registrations will close on{' '}
             <span className='text-red-600'>28th December</span>.
           </p>
-
-          <button className='w-full py-3 bg-gradient-to-tr from-blue-900 to-blue-700 hover:from-blue-700 hover:to-blue-600 text-white font-bold font-quickSand rounded-lg transition-all duration-300 shadow-md'>
-            Inquire Now
-          </button>
+          <div className='flex items-center gap-4'>
+            <button className='w-full py-3 bg-gradient-to-tr from-blue-900 to-blue-700 hover:from-blue-700 hover:to-blue-600 text-white font-bold font-quickSand rounded-lg transition-all duration-300 shadow-md'>
+              Inquire Now
+            </button>
+            <button className='w-full py-3 bg-gradient-to-tr from-blue-900 to-blue-700 hover:from-blue-700 hover:to-blue-600 text-white font-bold font-quickSand rounded-lg transition-all duration-300 shadow-md'>
+              Download Brochure
+            </button>
+          </div>
         </div>
 
         {/* Image Section */}
