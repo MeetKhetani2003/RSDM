@@ -5,6 +5,7 @@ import Hero from '@/Components/Home/Hero';
 import RecentPlacement from '@/Components/Placements/RecentPlacement';
 import Representitive from '@/Components/Placements/Representitive';
 import Stats from '@/Components/Home/Stats';
+import Tools from '@/Components/Home/Tools';
 import Welcome from '@/Components/Home/Welcome';
 
 import AboutCourse from '../../Components/Home/AboutCourse';
@@ -21,6 +22,7 @@ const Home = () => {
       <Projects />
 
       <Benifits />
+      <Tools />
       <RecentPlacement />
       <Freelancers />
       <Representitive />

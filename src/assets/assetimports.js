@@ -20,6 +20,30 @@ import image5 from './Krishna Tank.jpg';
 import logo from './logo.png';
 import image6 from './Mital  Bhimani.png';
 import mobileBg from './mobileBg.mp4';
+import mt1 from './mt1.png';
+import mt10 from './mt10.png';
+import mt11 from './mt11.png';
+import mt12 from './mt12.png';
+import mt13 from './mt13.png';
+import mt14 from './mt14.png';
+import mt15 from './mt15.png';
+import mt16 from './mt16.png';
+import mt17 from './mt17.png';
+import mt18 from './mt18.png';
+import mt19 from './mt19.png';
+import mt2 from './mt2.png';
+import mt20 from './mt20.png';
+import mt21 from './mt21.png';
+import mt22 from './mt22.png';
+import mt23 from './mt23.png';
+import mt24 from './mt24.png';
+import mt3 from './mt3.png';
+import mt4 from './mt4.png';
+import mt5 from './mt5.png';
+import mt6 from './mt6.png';
+import mt7 from './mt7.png';
+import mt8 from './mt8.png';
+import mt9 from './mt9.png';
 import p1 from './p1.avif';
 import p2 from './p2.jpg';
 import p3 from './p3.jpg';
@@ -62,6 +86,30 @@ export const assets = {
   Tool9,
   Tool10,
   digital2,
+  mt1,
+  mt2,
+  mt3,
+  mt4,
+  mt5,
+  mt6,
+  mt7,
+  mt8,
+  mt9,
+  mt10,
+  mt11,
+  mt12,
+  mt13,
+  mt14,
+  mt15,
+  mt16,
+  mt17,
+  mt18,
+  mt19,
+  mt20,
+  mt21,
+  mt22,
+  mt23,
+  mt24,
   p1,
   p2,
   p3,
