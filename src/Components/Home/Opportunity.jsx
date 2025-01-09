@@ -13,6 +13,7 @@ import {
 } from '@mui/material';
 import { Check } from 'lucide-react';
 import React from 'react';
+import { FcApproval } from 'react-icons/fc';
 
 import { styled } from '@mui/system';
 
@@ -170,24 +171,25 @@ const Opportunity = () => {
               gutterBottom
               style={{ display: 'flex', gap: 12 }}
             >
-              <Check color='green' /> Marketing is evolving with the internet
-              boom.
+              <FcApproval className='text-2xl' />
+              Marketing is evolving with the internet boom.
             </Typography>
             <Typography
               variant='body1'
               gutterBottom
               style={{ display: 'flex', gap: 12 }}
             >
-              <Check color='green' /> Digital Marketing has emerged as a new
-              form of marketing.
+              <FcApproval className='text-2xl' />
+              Digital Marketing has emerged as a new form of marketing.
             </Typography>
             <Typography
               variant='body1'
               gutterBottom
               style={{ display: 'flex', gap: 12 }}
             >
-              <Check color='green' /> It offers niche and lucrative career
-              options for the youth in India.
+              <FcApproval className='text-2xl' />
+              It offers niche and lucrative career options for the youth in
+              India.
             </Typography>
           </StyledCard>
         </Grid>
@@ -201,31 +203,32 @@ const Opportunity = () => {
               gutterBottom
               style={{ display: 'flex', gap: 12 }}
             >
-              <Check color='green' /> India has overtaken the U.S. as the
-              second-largest country in terms of internet users.
+              <FcApproval className='text-3xl' />
+              India has overtaken the U.S. as the second-largest country in
+              terms of internet users.
             </Typography>
             <Typography
               variant='body1'
               gutterBottom
               style={{ display: 'flex', gap: 12 }}
             >
-              <Check color='green' /> India&apos;s Digital Marketing Industry is
-              growing at 33.5%.
+              <FcApproval className='text-2xl' />
+              India&apos;s Digital Marketing Industry is growing at 33.5%.
             </Typography>
             <Typography
               variant='body1'
               gutterBottom
               style={{ display: 'flex', gap: 12 }}
             >
-              <Check color='green' /> The industry is currently worth around $68
-              billion.
+              <FcApproval className='text-2xl' />
+              The industry is currently worth around $68 billion.
             </Typography>
             <Typography
               variant='body1'
               gutterBottom
               style={{ display: 'flex', gap: 12 }}
             >
-              <Check color='green' size={'35px'} />
+              <FcApproval className='text-4xl' />
               Advertising through mobile phones and tablets has risen to $6
               billion, predicted to reach $7.8 billion by 2022.
             </Typography>
@@ -234,8 +237,9 @@ const Opportunity = () => {
               gutterBottom
               style={{ display: 'flex', gap: 12 }}
             >
-              <Check color='green' /> The digital industry will produce more
-              than 30 lakh jobs in India by 2022.
+              <FcApproval className='text-2xl' />
+              The digital industry will produce more than 30 lakh jobs in India
+              by 2022.
             </Typography>
           </StyledCard>
         </Grid>
