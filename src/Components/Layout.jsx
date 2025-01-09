@@ -8,7 +8,7 @@ import Navbar from './Navbar';
 
 const Layout = () => {
   return (
-    <>
+    <div className='overflow-x-hidden'>
       <div className='sticky top-0 z-[100]'>
         <Navbar />
       </div>
@@ -21,7 +21,7 @@ const Layout = () => {
       <div className='sticky bg-blue-950 w-full bottom-0 z-[100]'>
         <BottomBar />
       </div>
-    </>
+    </div>
   );
 };
 
