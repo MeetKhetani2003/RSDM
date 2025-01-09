@@ -18,6 +18,7 @@ import image4 from './hari om.jpg';
 import hero from './homeBg.png';
 import image5 from './Krishna Tank.jpg';
 import logo from './logo.png';
+import mia from './mia.png';
 import image6 from './Mital  Bhimani.png';
 import mobileBg from './mobileBg.mp4';
 import mt1 from './mt1.png';
@@ -52,7 +53,10 @@ import p5 from './p5.jpg';
 import p6 from './p6.jpg';
 import p7 from './p7.avif';
 import p8 from './p8.jpg';
+import tm1 from './portrait-smiling-man-with-adhesive-notes-suit-standing-against-white-background_1048944-12071107.avif';
 import representitive from './representitives.webp';
+import sb from './sb.png';
+import startup from './startup.png';
 import Tool1 from './Tool1.png';
 import Tool10 from './Tool10.svg';
 import Tool11 from './Tool11.svg';
@@ -71,6 +75,7 @@ export const assets = {
   hero,
   bgImg,
   benifits,
+  tm1,
   ai,
   welcome,
   digital,
@@ -93,6 +98,9 @@ export const assets = {
   mt5,
   mt6,
   mt7,
+  mia,
+  sb,
+  startup,
   mt8,
   mt9,
   mt10,

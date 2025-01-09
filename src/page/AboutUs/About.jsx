@@ -3,6 +3,7 @@ import React from 'react';
 import AboutRSDM from '@/Components/AboutUs/AboutRSDM';
 import Hero from '@/Components/AboutUs/Hero';
 import Journey from '@/Components/AboutUs/Journey';
+import OurTeam from '@/Components/AboutUs/OurTeam';
 
 const About = () => {
   const events = [
@@ -88,6 +89,7 @@ const About = () => {
     <div>
       <Hero />
       <AboutRSDM />
+      <OurTeam />
       <Journey events={events} />
     </div>
   );
