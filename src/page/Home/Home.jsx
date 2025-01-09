@@ -2,6 +2,7 @@ import { Projects } from '@/Components/Home/Projects';
 import Benifits from '@/Components/Home/Benifits';
 import Freelancers from '@/Components/Placements/Freelancers';
 import Hero from '@/Components/Home/Hero';
+import Opportunity from '@/Components/Home/Opportunity';
 import RecentPlacement from '@/Components/Placements/RecentPlacement';
 import Representitive from '@/Components/Placements/Representitive';
 import Stats from '@/Components/Home/Stats';
@@ -23,6 +24,7 @@ const Home = () => {
 
       <Benifits />
       <Tools />
+      <Opportunity />
       <RecentPlacement />
       <Freelancers />
       <Representitive />
