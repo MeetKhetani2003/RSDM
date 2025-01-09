@@ -18,7 +18,7 @@ const Layout = () => {
       <div>
         <Footer />
       </div>
-      <div className='sticky bg-blue-950 w-full bottom-0 z-[100]'>
+      <div className='fixed bg-blue-950 w-full bottom-0 z-[100]'>
         <BottomBar />
       </div>
     </div>
