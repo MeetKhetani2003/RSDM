@@ -210,8 +210,7 @@ const ContactUs = () => {
                 color: '#333',
               }}
             >
-              Dummy Company Pvt. Ltd. Building No. 1, Road-C, Near ABC Mall,
-              Dummy Street, Citytown, Country - 123456
+              Astorn Chowk, Rajkot
             </Box>
           </Box>
 
@@ -236,7 +235,7 @@ const ContactUs = () => {
                 color: '#333',
               }}
             >
-              Monday-Saturday, 9:00 AM to 6:00 PM
+              Monday-Saturday, 9:00 AM to 9:00 PM
             </Box>
           </Box>
 
@@ -262,8 +261,8 @@ const ContactUs = () => {
                 color: '#333',
               }}
             >
-              <strong>Email:</strong> info@dummycompany.com
-              <strong>Call:</strong> +1 234-567-8900
+              <strong>Email:</strong> info@rsdminstitute.in
+              <strong>Call:</strong> +91 9904536747
             </Box>
           </Box>
         </Grid>

@@ -94,15 +94,14 @@ const Footer = () => {
             <div className='flex items-center gap-2'>
               <Clock3 />
               <div>
-                <p>Mon To Sun 8:00 AM – 08:00 PM</p>
+                <p>Mon To Sun 09:00 AM – 09:00 PM</p>
                 <p>Visiting Hours / Enquiry</p>
               </div>
             </div>
             <div className='flex items-center gap-2'>
               <Phone />
               <div>
-                <p>+91 9607355959</p>
-                <p>+91 8552077668</p>
+                <p>+91 9904536747</p>
               </div>
             </div>
           </div>
@@ -215,7 +214,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    to='/courses'
+                    to='/'
                     className='text-gray-400 hover:text-white transition'
                   >
                     <Instagram />
@@ -223,7 +222,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    to='/placements'
+                    to='/'
                     className='text-gray-400 hover:text-white transition'
                   >
                     <Linkedin />
@@ -231,7 +230,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    to='/about'
+                    to='/'
                     className='text-gray-400 hover:text-white transition'
                   >
                     <Youtube />
