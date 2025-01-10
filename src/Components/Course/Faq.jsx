@@ -8,16 +8,59 @@ import React from 'react';
 
 const faqItems = [
   {
-    question: 'Is it accessible?',
+    question: '1.	What is this course about, and who is it for?',
     answer: 'Yes. It adheres to the WAI-ARIA design pattern.',
   },
   {
-    question: 'Is it styled?',
+    question: '2.	What are the prerequisites for enrolling in this course? ',
     answer:
       "Yes. It comes with default styles that matches the other components' aesthetic.",
   },
   {
-    question: 'Is it animated?',
+    question: '3.	Is this course suitable for beginners?',
+    answer:
+      "Yes. It's animated by default, but you can disable it if you prefer.",
+  },
+  {
+    question: '4.	What topics and tools are covered in the course?',
+    answer:
+      "Yes. It comes with default styles that matches the other components' aesthetic.",
+  },
+  {
+    question:
+      '5.	What is the duration of the course, and how much time should I dedicate weekly?',
+    answer:
+      "Yes. It's animated by default, but you can disable it if you prefer.",
+  },
+  {
+    question:
+      '6.	What is the learning format? Are sessions live, recorded, or hybrid?',
+    answer:
+      "Yes. It comes with default styles that matches the other components' aesthetic.",
+  },
+  {
+    question: '7.	Does the course include projects or assignments?',
+    answer:
+      "Yes. It's animated by default, but you can disable it if you prefer.",
+  },
+  {
+    question: '8.	Is the certification verifiable by employers?',
+    answer:
+      "Yes. It comes with default styles that matches the other components' aesthetic.",
+  },
+  {
+    question: '9.	Does this course provide job assistance?',
+    answer:
+      "Yes. It's animated by default, but you can disable it if you prefer.",
+  },
+  {
+    question: '10.	What is the course fee?',
+    answer:
+      "Yes. It comes with default styles that matches the other components' aesthetic.",
+  },
+  {
+    question:
+      '11.	How can I get help if I have questions or face technical issues?',
     answer:
       "Yes. It's animated by default, but you can disable it if you prefer.",
   },

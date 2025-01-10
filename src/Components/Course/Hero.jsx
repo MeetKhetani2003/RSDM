@@ -2,6 +2,8 @@ import React from 'react';
 
 import { assets } from '@/assets/assetimports';
 
+import DialogForm from '../Home/DialogForm';
+import { Dialog, DialogContent, DialogTrigger } from '../ui/dialog';
 import BreadcrumbLayout from '../BreadCrumbLayout';
 
 const Hero = () => {
@@ -40,9 +42,17 @@ const Hero = () => {
             <span className='text-red-600'>28th December</span>.
           </p>
           <div className='flex items-center gap-4'>
-            <button className='w-full py-3 bg-gradient-to-tr from-blue-900 to-blue-700 hover:from-blue-700 hover:to-blue-600 text-white font-bold font-quickSand rounded-lg transition-all duration-300 shadow-md'>
-              Inquire Now
-            </button>
+            <Dialog>
+              <DialogTrigger asChild>
+                <button className='w-full py-3 bg-gradient-to-tr from-blue-900 to-blue-700 hover:from-blue-700 hover:to-blue-600 text-white font-bold font-quickSand rounded-lg transition-all duration-300 shadow-md'>
+                  Inquire Now
+                </button>
+              </DialogTrigger>
+              <DialogContent className='bg-white rounded-lg p-4 mt-10 max-w-md mx-auto'>
+                <DialogForm />
+              </DialogContent>
+            </Dialog>
+
             <button className='w-full py-3 bg-gradient-to-tr from-blue-900 to-blue-700 hover:from-blue-700 hover:to-blue-600 text-white font-bold font-quickSand rounded-lg transition-all duration-300 shadow-md'>
               Download Brochure
             </button>

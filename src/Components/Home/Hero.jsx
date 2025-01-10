@@ -24,8 +24,8 @@ const Hero = () => {
             Certified Digital Marketing Master Course
           </h1>
           <p className='text-xl md:text-xl font-bold text-center md:text-left'>
-            Best Digital Marketing Course for Students, Working Professionals,
-            and Entrepreneurs
+            Best Digital Marketing Course in Rajkot for Students, Working
+            Professionals, and Entrepreneurs
           </p>
           <div className='bg-gradient-to-b from-white via-white to-gray-100 border border-blue-950 rounded-xl p-6'>
             <div className='flex flex-col md:flex-row items-center justify-between gap-8'>
