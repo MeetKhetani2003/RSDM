@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom';
 import { useEffect } from 'react';
 
+import Admin from './Components/Admin/Admin';
 import About from './page/AboutUs/About';
 import Contact from './page/AboutUs/Contact';
 import Course from './page/Courses/Course';
@@ -33,6 +34,7 @@ function App() {
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
         </Route>
+        <Route path='/admin' element={<Admin />} />
       </Routes>
     </Router>
   );
