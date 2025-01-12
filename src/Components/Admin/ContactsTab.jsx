@@ -15,6 +15,7 @@ import {
   DialogActions,
 } from '@mui/material';
 import axios from 'axios';
+import { format } from 'date-fns';
 import React, { useEffect, useState } from 'react';
 
 const ContactsTab = () => {
@@ -32,6 +33,7 @@ const ContactsTab = () => {
         'https://rsdmserver.onrender.com/api/v1/contacts'
       );
       setContacts(response.data);
+      console.log(response.data);
     } catch (error) {
       console.error('Error fetching contacts:', error);
     }
@@ -120,7 +122,7 @@ const ContactsTab = () => {
                 <TableCell>{contact.email}</TableCell>
                 <TableCell>{contact.message}</TableCell>
                 <TableCell>
-                  {new Date(contact.createdAt).toLocaleDateString()}
+                  {format(new Date(contact.createdAt), 'dd/MM/yyyy')}
                 </TableCell>
                 <TableCell>{contact.inquiryFrom}</TableCell>
                 <TableCell>
