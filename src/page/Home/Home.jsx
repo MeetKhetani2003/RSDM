@@ -22,7 +22,7 @@ const Home = () => {
       <Hero />
       {showDialog && (
         <div className='fixed z-[150] inset-0 bg-gray-500 bg-opacity-50 flex justify-center items-center'>
-          <div className='bg-white p-6 rounded-lg shadow-lg max-w-xl w-full'>
+          <div className='bg-white p-6 rounded-lg shadow-lg w-fit px-10'>
             <AutoDialog closeDialog={closeDialog} />
           </div>
         </div>

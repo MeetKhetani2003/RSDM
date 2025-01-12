@@ -104,7 +104,7 @@ const ContactUs = () => {
           textAlign: 'center',
         }}
       >
-        We&apos;d love to hear from you! Fill out the form and we'll get back to
+        We&apos;d love to hear from you! Fill out the form and we&apos;ll get back to
         you shortly.
       </Typography>
       <Grid

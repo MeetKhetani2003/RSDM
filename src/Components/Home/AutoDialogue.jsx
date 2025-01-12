@@ -32,8 +32,11 @@ const AutoDialog = ({ closeDialog }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className='space-y-6 w-full'>
-      <h2 className='text-2xl font-semibold text-gray-800 whitespace-nowrap text-center'>
+    <form
+      onSubmit={handleSubmit}
+      className='space-y-6 w-fit max-w-xs md:max-w-md'
+    >
+      <h2 className='text-2xl font-semibold text-gray-800 md:whitespace-nowrap text-center'>
         Drop Your Inquiry & Get Free Demo Details
       </h2>
 

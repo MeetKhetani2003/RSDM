@@ -49,7 +49,7 @@ const BottomBar = () => {
               Inquire Now
             </button>
           </DialogTrigger>
-          <DialogContent className='bg-white rounded-lg p-4 mt-10 max-w-md mx-auto'>
+          <DialogContent className='bg-white rounded-lg p-4 md:mt-10 max-w-md mx-auto'>
             <DialogForm closeDialog={handleCloseDialog} from={'Bottom-Bar'} />
           </DialogContent>
         </Dialog>
