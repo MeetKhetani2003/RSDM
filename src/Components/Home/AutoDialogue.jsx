@@ -4,13 +4,12 @@ import React, { useState } from 'react';
 import { submitForm } from '@/lib/formutil';
 import { useToast } from '@/hooks/use-toast';
 
-const ContactForm = ({ onSubmit }) => {
+const AutoDialog = ({ closeDialog }) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    contact: '',
-    message: '',
-    inquiryFrom: 'Form',
+    number: '',
+    inquiryFrom: 'Popup',
   });
   const { toast } = useToast();
   const handleChange = (e) => {
@@ -22,22 +21,20 @@ const ContactForm = ({ onSubmit }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await axios.post(
-      'http://localhost:3000/api/v1/contacts/create',
+    await axios.post(
+      'https://rsdmserver.onrender.com/api/v1/contacts/create',
       formData
     );
+    closeDialog();
     toast({
-      title: 'Form Submitted successfully',
+      title: 'Form Submitted Successfully',
     });
-    return response;
   };
+
   return (
-    <form
-      onSubmit={handleSubmit}
-      className='max-w-xl mx-auto p-6 bg-white shadow-md rounded-lg space-y-6'
-    >
-      <h2 className='text-2xl font-bold text-gray-800 text-center'>
-        Contact Us
+    <form onSubmit={handleSubmit} className='space-y-6 w-full'>
+      <h2 className='text-2xl font-semibold text-gray-800 whitespace-nowrap text-center'>
+        Drop Your Inquiry & Get Free Demo Details
       </h2>
 
       {/* Name Field */}
@@ -56,7 +53,7 @@ const ContactForm = ({ onSubmit }) => {
           value={formData.name}
           onChange={handleChange}
           required
-          className='block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500'
+          className='block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500'
         />
       </div>
 
@@ -76,61 +73,48 @@ const ContactForm = ({ onSubmit }) => {
           value={formData.email}
           onChange={handleChange}
           required
-          className='block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500'
+          className='block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500'
         />
       </div>
 
       {/* Contact Number Field */}
       <div className='space-y-1'>
         <label
-          htmlFor='contact'
+          htmlFor='number'
           className='block text-sm font-medium text-gray-700'
         >
           Contact Number
         </label>
         <input
           type='tel'
-          id='contact'
-          name='contact'
+          id='number'
+          name='number'
           placeholder='Your Contact Number'
-          value={formData.contact}
+          value={formData.number}
           onChange={handleChange}
           required
-          className='block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500'
+          className='block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500'
         />
       </div>
 
-      {/* Message Field */}
-      <div className='space-y-1'>
-        <label
-          htmlFor='message'
-          className='block text-sm font-medium text-gray-700'
-        >
-          Message
-        </label>
-        <textarea
-          id='message'
-          name='message'
-          placeholder='Write your message here...'
-          value={formData.message}
-          onChange={handleChange}
-          required
-          className='block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500'
-          rows='4'
-        ></textarea>
-      </div>
-
-      {/* Submit Button */}
-      <div className='flex justify-center'>
+      {/* Submit & Close Buttons */}
+      <div className='flex gap-3 justify-between'>
         <button
           type='submit'
-          className='w-full px-4 py-2 text-white bg-green-600 rounded-md shadow-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500'
+          className='w-full px-4 py-2 text-white bg-blue-600 rounded-md shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500'
         >
           Submit
+        </button>
+        <button
+          type='button'
+          onClick={closeDialog}
+          className='w-full px-4 py-2 text-white bg-red-600 rounded-md shadow-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500'
+        >
+          Close
         </button>
       </div>
     </form>
   );
 };
 
-export default ContactForm;
+export default AutoDialog;

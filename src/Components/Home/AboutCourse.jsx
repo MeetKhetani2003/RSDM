@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { GoQuestion } from 'react-icons/go';
+import { TfiArrowCircleRight } from 'react-icons/tfi';
 import { useNavigate } from 'react-router-dom';
 
 import { assets } from '@/assets/assetimports';
@@ -9,6 +10,10 @@ import { Dialog, DialogContent, DialogTrigger } from '../ui/dialog';
 import DialogForm from './DialogForm';
 
 const AboutCourse = () => {
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
+  const handleCloseDialog = () => {
+    setIsDialogOpen(false);
+  };
   const navigate = useNavigate();
   return (
     <div>
@@ -21,28 +26,66 @@ const AboutCourse = () => {
         </div>
         <div className='font-monsterate text-gray-600 text-wrap text-justify space-y-4 md:w-1/2 text-base font-medium'>
           <p>
-            Best Digital Marketing Course in Rajkot At RSDM, we offer a
-            cutting-edge digital marketing course designed to cater to students,
-            working professionals, and entrepreneurs alike. Our curriculum is
-            meticulously crafted to provide in-depth knowledge of SEO, social
-            media marketing, Google Ads, content marketing, and more. For
-            students, it’s a gateway to building a high-demand career in the
-            digital world. Working professionals can elevate their skills, boost
-            job prospects, or transition into new roles. Entrepreneurs, on the
-            other hand, gain the expertise to promote their businesses, reach
-            wider audiences, and achieve measurable growth in the competitive
-            online market.
+            {`RSDM offers Rajkot's best digital marketing course, empowering
+            students, professionals, and entrepreneurs to thrive in today's
+            booming digital landscape. Our cutting-edge curriculum provides
+            in-depth training in SEO, social media marketing, Google Ads,
+            content marketing, and more, equipping students for high-demand
+            careers, professionals for career advancement, and entrepreneurs for
+            measurable business growth. Gain practical skills and
+            industry-relevant knowledge to confidently launch successful
+            campaigns, scale businesses, or secure well-paying jobs in
+            this dynamic field.`}
           </p>
-          <p>
-            Scope and Benefits of Digital Marketing The digital marketing
-            industry is booming, with businesses of all sizes relying on online
-            platforms to reach customers. This course empowers you with
-            practical skills and industry-relevant knowledge to excel in this
-            dynamic field. With our guidance, you’ll gain proficiency in
-            leveraging the latest tools and strategies, ensuring you stand out
-            in your endeavors. Whether it’s securing a well-paying job,
-            launching successful ad campaigns, or scaling your business, our
-            course equips you to achieve your goals confidently and efficiently.
+          <p className='flex items-start justify-between md:flex-row flex-col'>
+            <ul>
+              <li className='flex items-center gap-3'>
+                <TfiArrowCircleRight />
+                Students And fresh Graduates
+              </li>
+              <li className='flex items-center gap-3'>
+                <TfiArrowCircleRight />
+                Working Professionals
+              </li>
+              <li className='flex items-center gap-3'>
+                <TfiArrowCircleRight />
+                Job Seekers
+              </li>
+              <li className='flex items-center gap-3'>
+                <TfiArrowCircleRight />
+                Entrepreneurs and startups
+              </li>
+              <li className='flex items-center gap-3'>
+                <TfiArrowCircleRight />
+                Corporate Teams
+              </li>
+              <li className='flex items-center gap-3'>
+                <TfiArrowCircleRight />
+                Home Entrepreneur
+              </li>
+            </ul>
+            <ul>
+              <li className='flex items-center gap-3'>
+                <TfiArrowCircleRight />
+                Freelancer
+              </li>
+              <li className='flex items-center gap-3'>
+                <TfiArrowCircleRight />
+                Beginners Learnngs for intrest
+              </li>
+              <li className='flex items-center gap-3'>
+                <TfiArrowCircleRight />
+                Educational Institutes
+              </li>
+              <li className='flex items-center gap-3'>
+                <TfiArrowCircleRight />
+                NGOs And Special Organizations
+              </li>
+              <li className='flex items-center gap-3'>
+                <TfiArrowCircleRight />
+                Influencers And Bloggers
+              </li>
+            </ul>
           </p>
           <div className='flex gap-7 items-center'>
             <button
@@ -51,14 +94,17 @@ const AboutCourse = () => {
             >
               Learn More
             </button>
-            <Dialog>
+            <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
               <DialogTrigger asChild>
-                <button className='w-full hover:text-blue-100 hover:bg-blue-950 bg-blue-100 text-blue-950 py-3 rounded-md text-lg  transition-all duration-300'>
+                <button className='w-full hover:text-blue-100 hover:bg-blue-950 bg-blue-100 text-blue-950 py-3 rounded-md text-lg transition-all duration-300'>
                   Inquire Now
                 </button>
               </DialogTrigger>
               <DialogContent className='bg-white rounded-lg p-4 mt-10 max-w-md mx-auto'>
-                <DialogForm />
+                <DialogForm
+                  closeDialog={handleCloseDialog}
+                  from={'About-Home'}
+                />
               </DialogContent>
             </Dialog>
           </div>

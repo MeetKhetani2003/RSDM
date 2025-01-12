@@ -28,7 +28,9 @@ const ContactsTab = () => {
 
   const fetchContacts = async () => {
     try {
-      const response = await axios.get('http://localhost:3000/api/v1/contacts');
+      const response = await axios.get(
+        'https://rsdmserver.onrender.com/api/v1/contacts'
+      );
       setContacts(response.data);
     } catch (error) {
       console.error('Error fetching contacts:', error);
@@ -37,7 +39,9 @@ const ContactsTab = () => {
 
   const handleDeleteContact = async (id) => {
     try {
-      await axios.delete(`http://localhost:3000/api/v1/contacts/${id}`);
+      await axios.delete(
+        `https://rsdmserver.onrender.com/api/v1/contacts/${id}`
+      );
       setContacts(contacts.filter((contact) => contact._id !== id));
     } catch (error) {
       console.error('Error deleting contact:', error);
@@ -46,7 +50,7 @@ const ContactsTab = () => {
 
   const handleDeleteAll = async () => {
     try {
-      await axios.delete('http://localhost:3000/api/v1/contacts');
+      await axios.delete('https://rsdmserver.onrender.com/api/v1/contacts');
       setContacts([]);
     } catch (error) {
       console.error('Error deleting all contacts:', error);
@@ -68,7 +72,7 @@ const ContactsTab = () => {
 
     try {
       await axios.put(
-        `http://localhost:3000/api/v1/contacts/${editContact._id}`,
+        `https://rsdmserver.onrender.com/api/v1/contacts/${editContact._id}`,
         editContact
       );
 
@@ -105,6 +109,7 @@ const ContactsTab = () => {
               <TableCell>Email</TableCell>
               <TableCell>Message</TableCell>
               <TableCell>Date</TableCell>
+              <TableCell>Leads</TableCell>
               <TableCell>Actions</TableCell>
             </TableRow>
           </TableHead>
@@ -117,6 +122,7 @@ const ContactsTab = () => {
                 <TableCell>
                   {new Date(contact.createdAt).toLocaleDateString()}
                 </TableCell>
+                <TableCell>{contact.inquiryFrom}</TableCell>
                 <TableCell>
                   <Button
                     variant='outlined'
@@ -167,6 +173,15 @@ const ContactsTab = () => {
             value={editContact?.message || ''}
             onChange={(e) =>
               setEditContact({ ...editContact, message: e.target.value })
+            }
+            margin='dense'
+          />
+          <TextField
+            label='Inquiry From'
+            fullWidth
+            value={editContact?.inquiryFrom || ''}
+            onChange={(e) =>
+              setEditContact({ ...editContact, inquiryFrom: e.target.value })
             }
             margin='dense'
           />

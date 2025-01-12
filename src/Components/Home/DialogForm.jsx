@@ -1,12 +1,18 @@
+import axios from 'axios';
 import React, { useState } from 'react';
 
-const DialogForm = () => {
+import { submitForm } from '@/lib/formutil';
+import { useToast } from '@/hooks/use-toast';
+
+const DialogForm = ({ from, closeDialog }) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    contact: '',
+    number: '',
     message: '',
+    inquiryFrom: from,
   });
+  const { toast } = useToast();
 
   const handleChange = (e) => {
     setFormData({
@@ -14,17 +20,27 @@ const DialogForm = () => {
       [e.target.name]: e.target.value,
     });
   };
-  ame;
 
-  const handleFormSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Form Submitted:', formData);
-    // Add logic to handle form data submission, e.g., API calls.
+    try {
+      const response = await axios.post(
+        'http://localhost:3000/api/v1/contacts/create',
+        formData
+      );
+      toast({ title: 'Form Submitted Successfully' });
+      console.log(response.data);
+      closeDialog(); // Close the dialog after submission
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      toast({ title: 'Submission failed', description: 'Please try again.' });
+    }
   };
+
   return (
-    <form onSubmit={handleFormSubmit} className='space-y-6'>
-      <h2 className='text-2xl font-bold text-gray-800 text-center'>
-        Contact Us
+    <form onSubmit={handleSubmit} className='space-y-6 w-full'>
+      <h2 className='text-2xl font-semibold text-gray-800 text-center'>
+        Drop Your Inquiry & Get Free Demo Details
       </h2>
 
       {/* Name Field */}
@@ -43,7 +59,7 @@ const DialogForm = () => {
           value={formData.name}
           onChange={handleChange}
           required
-          className='block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500'
+          className='block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500'
         />
       </div>
 
@@ -63,7 +79,7 @@ const DialogForm = () => {
           value={formData.email}
           onChange={handleChange}
           required
-          className='block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500'
+          className='block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500'
         />
       </div>
 
@@ -77,13 +93,13 @@ const DialogForm = () => {
         </label>
         <input
           type='tel'
-          id='contact'
-          name='contact'
+          id='number'
+          name='number'
           placeholder='Your Contact Number'
-          value={formData.contact}
+          value={formData.number}
           onChange={handleChange}
           required
-          className='block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500'
+          className='block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500'
         />
       </div>
 
@@ -98,20 +114,20 @@ const DialogForm = () => {
         <textarea
           id='message'
           name='message'
-          placeholder='Write your message here...'
+          placeholder='Your Message'
           value={formData.message}
           onChange={handleChange}
           required
-          className='block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500'
+          className='block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500'
           rows='4'
         ></textarea>
       </div>
 
-      {/* Submit Button */}
-      <div className='flex justify-center'>
+      {/* Submit & Close Buttons */}
+      <div className='flex gap-3 justify-center'>
         <button
           type='submit'
-          className='w-full px-4 py-2 text-white bg-green-600 rounded-md shadow-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500'
+          className='w-full px-4 py-2 text-white bg-blue-600 rounded-md shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500'
         >
           Submit
         </button>

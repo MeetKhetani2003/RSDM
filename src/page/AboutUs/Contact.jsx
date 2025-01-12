@@ -6,6 +6,7 @@ import {
   TextField,
   Typography,
 } from '@mui/material';
+import axios from 'axios';
 import { Clock10Icon, PhoneIcon } from 'lucide-react';
 import { useState } from 'react';
 import { CiLocationOn } from 'react-icons/ci';
@@ -19,6 +20,7 @@ const ContactUs = () => {
     email: '',
     number: '',
     message: '',
+    inquiryFrom: 'Contactus',
   });
 
   const [errors, setErrors] = useState({
@@ -50,16 +52,32 @@ const ContactUs = () => {
     e.preventDefault();
     if (validate()) {
       setIsSubmitting(true);
-      setTimeout(() => {
-        setIsSubmitting(false);
-        console.log('Toast triggered'); // Debugging log
+      try {
+        await axios.post(
+          'http://localhost:3000/api/v1/contacts/create',
+          formData
+        );
         toast({
           title: 'Request Submitted Successfully',
           description: 'We will get back to you soon.',
           action: <ToastAction altText='Go back'>Undo</ToastAction>,
         });
-        setFormData({ name: '', email: '', message: '', number: '' });
-      }, 1500);
+        setFormData({
+          name: '',
+          email: '',
+          number: '',
+          message: '',
+          inquiryFrom: 'Contactus',
+        });
+      } catch (error) {
+        toast({
+          title: 'Error',
+          description: 'Submission failed. Please try again later.',
+          action: <ToastAction altText='Retry'>Retry</ToastAction>,
+        });
+      } finally {
+        setIsSubmitting(false);
+      }
     }
   };
 
@@ -86,8 +104,8 @@ const ContactUs = () => {
           textAlign: 'center',
         }}
       >
-        We&apos;d love to hear from you! Fill out the form and we&apos;ll get
-        back to you shortly.
+        We&apos;d love to hear from you! Fill out the form and we'll get back to
+        you shortly.
       </Typography>
       <Grid
         container
@@ -97,7 +115,6 @@ const ContactUs = () => {
           alignItems: 'center',
         }}
       >
-        {/* Contact Form */}
         <Grid item xs={12} md={6}>
           <Box
             sx={{
@@ -167,7 +184,6 @@ const ContactUs = () => {
               </Grid>
               <Box sx={{ textAlign: 'center', mt: 4 }}>
                 <Button
-                  onClick={handleSubmit}
                   type='submit'
                   variant='contained'
                   size='large'
@@ -189,7 +205,6 @@ const ContactUs = () => {
           </Box>
         </Grid>
 
-        {/* Contact Details */}
         <Grid item xs={12} md={6}>
           <Box>
             <Typography
@@ -214,7 +229,6 @@ const ContactUs = () => {
             </Box>
           </Box>
 
-          {/* Additional Information */}
           <Box sx={{ mt: 4 }}>
             <Typography
               variant='h6'
@@ -268,7 +282,6 @@ const ContactUs = () => {
         </Grid>
       </Grid>
 
-      {/* Map */}
       <Box sx={{ mt: 6, textAlign: 'center' }}>
         <iframe
           src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14767.858607910088!2d70.7581320871582!3d22.2793288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395927d878f13b95%3A0x2dc90395b210b8d9!2sReliance%20Mall!5e0!3m2!1sen!2sin!4v1732599067442!5m2!1sen!2sin'

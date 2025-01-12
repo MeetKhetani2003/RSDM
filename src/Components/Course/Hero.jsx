@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { assets } from '@/assets/assetimports';
 
@@ -7,6 +7,10 @@ import { Dialog, DialogContent, DialogTrigger } from '../ui/dialog';
 import BreadcrumbLayout from '../BreadCrumbLayout';
 
 const Hero = () => {
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
+  const handleCloseDialog = () => {
+    setIsDialogOpen(false);
+  };
   const breadcrumbItems = [
     { title: 'Home', href: '/' },
     { title: 'Courses', href: '/courses' },
@@ -42,20 +46,32 @@ const Hero = () => {
             <span className='text-red-600'>28th December</span>.
           </p>
           <div className='flex items-center gap-4'>
-            <Dialog>
+            <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
               <DialogTrigger asChild>
                 <button className='w-full py-3 bg-gradient-to-tr from-blue-900 to-blue-700 hover:from-blue-700 hover:to-blue-600 text-white font-bold font-quickSand rounded-lg transition-all duration-300 shadow-md'>
                   Inquire Now
                 </button>
               </DialogTrigger>
               <DialogContent className='bg-white rounded-lg p-4 mt-10 max-w-md mx-auto'>
-                <DialogForm />
+                <DialogForm
+                  closeDialog={handleCloseDialog}
+                  from={'About-Course-Hero'}
+                />
               </DialogContent>
             </Dialog>
-
-            <button className='w-full py-3 bg-gradient-to-tr from-blue-900 to-blue-700 hover:from-blue-700 hover:to-blue-600 text-white font-bold font-quickSand rounded-lg transition-all duration-300 shadow-md'>
-              Download Brochure
-            </button>
+            <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
+              <DialogTrigger asChild>
+                <button className='w-full py-3 bg-gradient-to-tr from-blue-900 to-blue-700 hover:from-blue-700 hover:to-blue-600 text-white font-bold font-quickSand rounded-lg transition-all duration-300 shadow-md'>
+                  Download Brochure
+                </button>
+              </DialogTrigger>
+              <DialogContent className='bg-white rounded-lg p-4 mt-10 max-w-md mx-auto'>
+                <DialogForm
+                  closeDialog={handleCloseDialog}
+                  from={'Download Brochure - AboutCourse'}
+                />
+              </DialogContent>
+            </Dialog>
           </div>
         </div>
 

@@ -8,6 +8,10 @@ import { Dialog, DialogContent, DialogTrigger } from '../ui/dialog';
 import DialogForm from './DialogForm';
 
 const BottomBar = () => {
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
+  const handleCloseDialog = () => {
+    setIsDialogOpen(false);
+  };
   return (
     <div className='border-t border-white '>
       <div className='max-w-5xl mx-auto flex items-center justify-between '>
@@ -36,7 +40,7 @@ const BottomBar = () => {
         </div>
 
         {/* Inquire Now Dialog */}
-        <Dialog>
+        <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
           <DialogTrigger asChild>
             <button className='flex text-white bg-green-500 px-4 py-2 gap-2 items-center hover:bg-green-700 border-l border-white'>
               <span className='hidden md:block'>
@@ -46,7 +50,7 @@ const BottomBar = () => {
             </button>
           </DialogTrigger>
           <DialogContent className='bg-white rounded-lg p-4 mt-10 max-w-md mx-auto'>
-            <DialogForm />
+            <DialogForm closeDialog={handleCloseDialog} from={'Bottom-Bar'} />
           </DialogContent>
         </Dialog>
       </div>

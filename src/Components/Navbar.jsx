@@ -17,9 +17,15 @@ import { Link, useLocation } from 'react-router-dom';
 
 import { assets } from '@/assets/assetimports';
 
+import DialogForm from './Home/DialogForm';
+import { Dialog, DialogContent, DialogTrigger } from './ui/dialog';
+
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
+  const handleCloseDialog = () => {
+    setIsDialogOpen(false);
+  };
   const links = [
     { title: 'Home', url: '/' },
     { title: 'Courses', url: '/courses' },
@@ -108,9 +114,19 @@ const Navbar = () => {
 
         {/* Download Ebook Button (Desktop) */}
         <div className='hidden md:block'>
-          <button className='bg-blue-950 text-white px-6 py-3 rounded-md text-lg hover:bg-blue-700 transition-all duration-300'>
-            Download Ebook
-          </button>
+          <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
+            <DialogTrigger asChild>
+              <button className='bg-blue-950 text-white px-6 py-3 rounded-md text-lg hover:bg-blue-700 transition-all duration-300'>
+                Download Ebook
+              </button>
+            </DialogTrigger>
+            <DialogContent className='bg-white rounded-lg p-4 mt-10 max-w-md mx-auto'>
+              <DialogForm
+                closeDialog={handleCloseDialog}
+                from={'Download Ebook'}
+              />
+            </DialogContent>
+          </Dialog>
         </div>
       </div>
     </div>

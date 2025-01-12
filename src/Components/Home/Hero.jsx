@@ -1,8 +1,16 @@
+import { useState } from 'react';
+
 import { assets } from '@/assets/assetimports';
 
+import DialogForm from '../Home/DialogForm';
+import { Dialog, DialogContent, DialogTrigger } from '../ui/dialog';
 import Stats from './Stats';
 
 const Hero = () => {
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
+  const handleCloseDialog = () => {
+    setIsDialogOpen(false);
+  };
   return (
     <div className='bg-[#ecedf1] py-12 relative'>
       <img
@@ -57,9 +65,19 @@ const Hero = () => {
               </div>
             </div>
             <div className='mt-4'>
-              <button className='bg-blue-950 text-white w-full py-4 mt-3 rounded-xl hover:bg-blue-800 transition duration-300'>
-                Enroll Now
-              </button>
+              <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
+                <DialogTrigger asChild>
+                  <button className='bg-blue-950 text-white w-full py-4 mt-3 rounded-xl hover:bg-blue-800 transition duration-300'>
+                    Inquire Now
+                  </button>
+                </DialogTrigger>
+                <DialogContent className='bg-white rounded-lg p-4 mt-10 max-w-md mx-auto'>
+                  <DialogForm
+                    closeDialog={handleCloseDialog}
+                    from={'Hero-Home'}
+                  />
+                </DialogContent>
+              </Dialog>
             </div>
           </div>
         </div>

@@ -14,9 +14,13 @@ import {
   TextField,
   DialogActions,
   Input,
+  Select,
+  MenuItem,
 } from '@mui/material';
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
+
+import { useToast } from '@/hooks/use-toast';
 
 const PhotosTab = () => {
   const [photos, setPhotos] = useState([]);
@@ -24,14 +28,16 @@ const PhotosTab = () => {
   const [openEditModal, setOpenEditModal] = useState(false);
   const [newPhoto, setNewPhoto] = useState({ img: '', type: '' });
   const [currentPhoto, setCurrentPhoto] = useState(null);
-
+  const { toast } = useToast();
   useEffect(() => {
     fetchPhotos();
   }, []);
 
   const fetchPhotos = async () => {
     try {
-      const response = await axios.get('http://localhost:3000/api/v1/photos');
+      const response = await axios.get(
+        'https://rsdmserver.onrender.com/api/v1/photos'
+      );
       setPhotos(response.data);
     } catch (error) {
       console.error('Error fetching photos:', error);
@@ -44,15 +50,21 @@ const PhotosTab = () => {
       formData.append('img', newPhoto.img);
       formData.append('type', newPhoto.type);
 
-      await axios.post('http://localhost:3000/api/v1/photos/create', formData, {
-        headers: { 'Content-Type': 'multipart/form-data' },
-      });
+      await axios.post(
+        'https://rsdmserver.onrender.com/api/v1/photos/create',
+        formData,
+        {
+          headers: { 'Content-Type': 'multipart/form-data' },
+        }
+      );
 
       setNewPhoto({ img: '', type: '' });
       setOpenModal(false);
+      toast('Photo added successfully!');
       fetchPhotos();
     } catch (error) {
       console.error('Error adding photo:', error);
+      toast('Failed to add photo.');
     }
   };
 
@@ -67,25 +79,29 @@ const PhotosTab = () => {
       formData.append('type', currentPhoto.type);
 
       await axios.put(
-        `http://localhost:3000/api/v1/photos/${currentPhoto._id}`,
+        `https://rsdmserver.onrender.com/api/v1/photos/${currentPhoto._id}`,
         formData,
         { headers: { 'Content-Type': 'multipart/form-data' } }
       );
 
       setOpenEditModal(false);
       setCurrentPhoto(null);
+      toast({ title: 'Photo updated successfully!' });
       fetchPhotos();
     } catch (error) {
       console.error('Error updating photo:', error);
+      toast({ title: 'Failed to update photo.' });
     }
   };
 
   const handleDeletePhoto = async (id) => {
     try {
-      await axios.delete(`http://localhost:3000/api/v1/photos/${id}`);
+      await axios.delete(`https://rsdmserver.onrender.com/api/v1/photos/${id}`);
+      toast({ title: 'Photo deleted successfully!' });
       fetchPhotos();
     } catch (error) {
       console.error('Error deleting photo:', error);
+      toast({ title: 'Failed to delete photo.' });
     }
   };
 
@@ -166,13 +182,19 @@ const PhotosTab = () => {
             }
             margin='dense'
           />
-          <TextField
+          <Select
             label='Type'
             fullWidth
-            value={newPhoto.type}
+            value={newPhoto?.type || ''}
             onChange={(e) => setNewPhoto({ ...newPhoto, type: e.target.value })}
             margin='dense'
-          />
+          >
+            <MenuItem value='Recent Placement'>Recent Placement</MenuItem>
+            <MenuItem value='Top Placement'>Top Placement</MenuItem>
+            <MenuItem value='Student as Freelancer'>
+              Student as Freelancer
+            </MenuItem>
+          </Select>
         </DialogContent>
         <DialogActions>
           <Button onClick={() => setOpenModal(false)}>Cancel</Button>
@@ -192,7 +214,7 @@ const PhotosTab = () => {
             }
             margin='dense'
           />
-          <TextField
+          <Select
             label='Type'
             fullWidth
             value={currentPhoto?.type || ''}
@@ -200,7 +222,13 @@ const PhotosTab = () => {
               setCurrentPhoto({ ...currentPhoto, type: e.target.value })
             }
             margin='dense'
-          />
+          >
+            <MenuItem value='Recent Placement'>Recent Placement</MenuItem>
+            <MenuItem value='Top Placement'>Top Placement</MenuItem>
+            <MenuItem value='Student as Freelancer'>
+              Student as Freelancer
+            </MenuItem>
+          </Select>
         </DialogContent>
         <DialogActions>
           <Button onClick={() => setOpenEditModal(false)}>Cancel</Button>
