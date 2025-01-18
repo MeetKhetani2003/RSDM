@@ -37,56 +37,61 @@ const AboutCourse = () => {
             campaigns, scale businesses, or secure well-paying jobs in
             this dynamic field.`}
           </p>
-          <p className='flex items-start justify-between md:flex-row flex-col'>
-            <ul>
-              <li className='flex items-center gap-3'>
-                <TfiArrowCircleRight />
-                Students And fresh Graduates
-              </li>
-              <li className='flex items-center gap-3'>
-                <TfiArrowCircleRight />
-                Working Professionals
-              </li>
-              <li className='flex items-center gap-3'>
-                <TfiArrowCircleRight />
-                Job Seekers
-              </li>
-              <li className='flex items-center gap-3'>
-                <TfiArrowCircleRight />
-                Entrepreneurs and startups
-              </li>
-              <li className='flex items-center gap-3'>
-                <TfiArrowCircleRight />
-                Corporate Teams
-              </li>
-              <li className='flex items-center gap-3'>
-                <TfiArrowCircleRight />
-                Home Entrepreneur
-              </li>
-            </ul>
-            <ul>
-              <li className='flex items-center gap-3'>
-                <TfiArrowCircleRight />
-                Freelancer
-              </li>
-              <li className='flex items-center gap-3'>
-                <TfiArrowCircleRight />
-                Beginners Learnngs for intrest
-              </li>
-              <li className='flex items-center gap-3'>
-                <TfiArrowCircleRight />
-                Educational Institutes
-              </li>
-              <li className='flex items-center gap-3'>
-                <TfiArrowCircleRight />
-                NGOs And Special Organizations
-              </li>
-              <li className='flex items-center gap-3'>
-                <TfiArrowCircleRight />
-                Influencers And Bloggers
-              </li>
-            </ul>
-          </p>
+          <div>
+            <h2 className='text-xl py-3 font-semibold'>
+              Who can join this course ?
+            </h2>
+            <p className='flex items-start justify-between md:flex-row flex-col'>
+              <ul>
+                <li className='flex items-center gap-3'>
+                  <TfiArrowCircleRight />
+                  Students And fresh Graduates
+                </li>
+                <li className='flex items-center gap-3'>
+                  <TfiArrowCircleRight />
+                  Working Professionals
+                </li>
+                <li className='flex items-center gap-3'>
+                  <TfiArrowCircleRight />
+                  Job Seekers
+                </li>
+                <li className='flex items-center gap-3'>
+                  <TfiArrowCircleRight />
+                  Entrepreneurs and startups
+                </li>
+                <li className='flex items-center gap-3'>
+                  <TfiArrowCircleRight />
+                  Corporate Teams
+                </li>
+                <li className='flex items-center gap-3'>
+                  <TfiArrowCircleRight />
+                  Home Entrepreneur
+                </li>
+              </ul>
+              <ul>
+                <li className='flex items-center gap-3'>
+                  <TfiArrowCircleRight />
+                  Freelancer
+                </li>
+                <li className='flex items-center gap-3'>
+                  <TfiArrowCircleRight />
+                  Beginners Learnngs for intrest
+                </li>
+                <li className='flex items-center gap-3'>
+                  <TfiArrowCircleRight />
+                  Educational Institutes
+                </li>
+                <li className='flex items-center gap-3'>
+                  <TfiArrowCircleRight />
+                  NGOs And Special Organizations
+                </li>
+                <li className='flex items-center gap-3'>
+                  <TfiArrowCircleRight />
+                  Influencers And Bloggers
+                </li>
+              </ul>
+            </p>
+          </div>
           <div className='flex gap-7 items-center'>
             <button
               onClick={() => navigate('/courses')}
