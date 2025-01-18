@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 import React from 'react';
 
 import AboutRSDM from '@/Components/AboutUs/AboutRSDM';
@@ -55,12 +56,10 @@ const About = () => {
     {
       type: 'work',
       date: '2024 - 2025',
-      // title: 'Web Designer',
-      // subtitle: 'San Francisco, CA',
       description: [
         'After thorough research, our idea proved valuable due to the high demand and need for it.',
         'That’s why we chose to establish an Education Institute for Digital and Social Media Marketing.',
-        'RSDM has created an innovative training center in Rajkot, fostering a motivating and dynamic work environment.',
+        '<strong>RSDM has created an innovative training center in Rajkot, fostering a motivating and dynamic work environment.</strong>',
         'Recognized for the Best Startup Ideas and Business Model by the Northeast Government for the first time.',
         'RSDM has established a robust network, linking over 50+ leading global brands for placements and consultations.',
         'Trained students at RSDM, achieving unparalleled success and top placement rates.',

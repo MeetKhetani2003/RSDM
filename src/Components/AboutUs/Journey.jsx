@@ -18,7 +18,7 @@ const Journey = ({ events }) => {
   return (
     <div className='py-8 px-4 md:mt-20'>
       <h1 className='font-semibold font-dmSans text-4xl text-center'>
-        The Path to Excellence From 2014
+        The Path to Excellence From 2020
       </h1>
       <VerticalTimeline>
         {events.map((event, index) => (
