@@ -6,19 +6,28 @@ import {
   CarouselPrevious,
 } from '../ui/carousel';
 import Autoplay from 'embla-carousel-autoplay';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import { assets } from '@/assets/assetimports'; // Ensure this is the correct import path
+import { usePhotos } from '@/hooks/use-photos';
 
 const RecentPlacement = () => {
-  const images = [
-    assets.image1, // Replace with actual image URLs or asset imports
-    assets.image2,
-    assets.image3,
-    assets.image4,
-    assets.image5,
-    assets.image6,
-  ];
+  const { photos, fetchPhotos } = usePhotos();
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    (async () => {
+      await fetchPhotos({ type: 'Recent Placement' });
+      setLoading(false);
+    })();
+  }, []);
+
+  if (loading) {
+    return <div className='text-center py-8'>Loading...</div>;
+  }
+  console.log(photos);
+
+  const images = photos.map((photo) => photo.img);
 
   return (
     <div className='relative overflow-hidden max-w-7xl mx-auto py-8 my-6'>

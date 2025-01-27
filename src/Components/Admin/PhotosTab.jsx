@@ -60,11 +60,11 @@ const PhotosTab = () => {
 
       setNewPhoto({ img: '', type: '' });
       setOpenModal(false);
-      toast('Photo added successfully!');
+      // toast('Photo added successfully!');
       fetchPhotos();
     } catch (error) {
       console.error('Error adding photo:', error);
-      toast('Failed to add photo.');
+      // toast('Failed to add photo.');
     }
   };
 
@@ -171,9 +171,14 @@ const PhotosTab = () => {
       </TableContainer>
 
       {/* Add Photo Modal */}
-      <Dialog open={openModal} onClose={() => setOpenModal(false)}>
-        <DialogTitle>Add New Photo</DialogTitle>
-        <DialogContent>
+      <Dialog
+        open={openModal}
+        onClose={() => setOpenModal(false)}
+        aria-labelledby='dialog-title'
+        aria-describedby='dialog-description'
+      >
+        <DialogTitle id='dialog-title'>Add New Photo</DialogTitle>
+        <DialogContent id='dialog-description'>
           <Input
             type='file'
             fullWidth
