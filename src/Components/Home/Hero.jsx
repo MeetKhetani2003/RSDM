@@ -29,7 +29,7 @@ const Hero = () => {
         {/* Hero Content */}
         <div className='px-6 md:px-9 space-y-8 md:w-1/2 md:-ml-10'>
           <h1 className='text-4xl md:text-5xl font-bold text-blue-950 text-center md:text-left'>
-            Certified Digital Marketing Master Course
+            Professional Certification Program in Digital Marketing
           </h1>
           <p className='text-xl md:text-xl font-bold text-center md:text-left'>
             Best Digital Marketing Course in Rajkot for Students, Working
@@ -43,9 +43,9 @@ const Hero = () => {
                   {[
                     'Job Placement & Internships',
                     'Live Projects with Experts',
-                    '44 Modules, 15+ Certifications',
+                    '44 Modules, 5+ Certifications',
                     'Affordable Course Fee',
-                    'Learning Portal with Lifetime Access',
+                    'Practical & Live Training',
                   ].map((item, i) => (
                     <li
                       key={i}

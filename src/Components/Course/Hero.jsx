@@ -31,7 +31,7 @@ const Hero = () => {
           </div>
 
           <h1 className='text-4xl font-extrabold font-dmSans leading-snug text-gray-900'>
-            Digital Marketing with AI
+            Professional Certification Program in Digital Marketing & Strategy
           </h1>
 
           <p className='text-lg font-openSans text-gray-700'>

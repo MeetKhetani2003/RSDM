@@ -24,7 +24,7 @@ const Course = () => {
     { title: '3 Months', subtitle: 'Duration' },
     { title: 'English', subtitle: 'Language' },
     { title: 'Job Assistance', subtitle: 'Program' },
-    { title: 'Live + Recorded', subtitle: 'Delivery Mode' },
+    { title: 'Live', subtitle: 'Delivery Mode' },
   ];
 
   return (

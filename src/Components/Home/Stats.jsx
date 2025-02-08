@@ -33,13 +33,13 @@ const Stats = () => {
       <div className='max-w-7xl mx-auto grid gap-2 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mt-4'>
         <StatCard
           IconComponent={FaUsers}
-          count={1}
-          suffix='Lac +'
+          count={150}
+          suffix='+'
           description='Student Placed'
         />
         <StatCard
           IconComponent={FaHandshakeAngle}
-          count={3000}
+          count={500}
           suffix='+'
           description='Companies TieUp'
         />
