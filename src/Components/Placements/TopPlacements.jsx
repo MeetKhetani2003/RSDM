@@ -50,7 +50,7 @@ const TopPlacements = () => {
                 <img
                   src={image}
                   alt={`Placement ${index + 1}`}
-                  className='w-full h-72 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300'
+                  className='w-full h-[370px] object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300'
                 />
               </div>
             </CarouselItem>
