@@ -5,6 +5,7 @@ import { useAutoPopup } from '@/lib/use-Auto-Dialog';
 import AboutCourse from '@/Components/Home/AboutCourse';
 import AutoDialog from '@/Components/Home/AutoDialogue';
 import Benifits from '@/Components/Home/Benifits';
+import CourseDetails from '@/Components/Course/CourseDetails';
 import Freelancers from '@/Components/Placements/Freelancers';
 import Hero from '@/Components/Home/Hero';
 import LogoMarquee from '@/Components/Home/Highlights';
@@ -16,7 +17,13 @@ import Welcome from '@/Components/Home/Welcome';
 
 const Home = () => {
   const { showDialog, closeDialog } = useAutoPopup();
-
+  const courseDetailsData = [
+    { title: '29 December 2024', subtitle: 'Date of Commencement' },
+    { title: '3 Months', subtitle: 'Duration' },
+    { title: 'English', subtitle: 'Language' },
+    { title: 'Job Assistance', subtitle: 'Program' },
+    { title: 'Live', subtitle: 'Delivery Mode' },
+  ];
   return (
     <div>
       <Hero />
@@ -30,6 +37,9 @@ const Home = () => {
       <LogoMarquee />
       <Welcome />
       <AboutCourse />
+      <div className='mt-8'>
+        <CourseDetails courseDetails={courseDetailsData} />
+      </div>
       <Projects />
       <Benifits />
       <Tools />

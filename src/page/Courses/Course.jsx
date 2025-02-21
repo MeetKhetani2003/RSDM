@@ -44,7 +44,7 @@ const Course = () => {
       <CourseOfferings />
       <ToolsMarquee />
       <Projects />
-      <PriceCard />
+      {/* <PriceCard /> */}
       <Certificate />
       <Faq />
     </div>

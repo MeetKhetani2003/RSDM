@@ -160,7 +160,7 @@ const Opportunity = () => {
           </StyledTable>
         </StyledTableContainer>
       </Box>
-      <StyledGridContainer container spacing={2}>
+      {/* <StyledGridContainer container spacing={2}>
         <Grid item xs={12} md={6}>
           <StyledCard>
             <Typography variant='h5' component='h2' gutterBottom>
@@ -243,7 +243,7 @@ const Opportunity = () => {
             </Typography>
           </StyledCard>
         </Grid>
-      </StyledGridContainer>
+      </StyledGridContainer> */}
     </StyledContainer>
   );
 };

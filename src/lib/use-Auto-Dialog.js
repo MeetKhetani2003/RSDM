@@ -4,10 +4,10 @@ export const useAutoPopup = () => {
   const [showDialog, setShowDialog] = useState(false);
 
   useEffect(() => {
-    // Show the dialog after a delay (e.g., 3 seconds)
+    // Show the dialog after a delay (e.g., 10 seconds)
     const timer = setTimeout(() => {
       setShowDialog(true);
-    }, 3000);
+    }, 10000);
 
     // Cleanup timeout on component unmount
     return () => clearTimeout(timer);

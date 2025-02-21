@@ -10,14 +10,87 @@ import React, { useEffect, useState } from 'react';
 
 import { Card, CardContent } from '../ui/card';
 
-const testimonialsData = Array.from({ length: 12 }).map((_, index) => ({
-  id: index + 1,
-  name: `User ${index + 1}`,
-  review: `This is a dummy review for User ${
-    index + 1
-  }. They had a fantastic experience!`,
-  img: `https://randomuser.me/api/portraits/women/${index + 1}.jpg`, // Random User API for demo
-}));
+const testimonialsData = [
+  {
+    id: 1,
+    name: 'Aarav Sharma',
+    review: 'Amazing place to learn digital marketing with hands-on training!',
+    img: 'https://randomuser.me/api/portraits/men/1.jpg',
+  },
+  {
+    id: 2,
+    name: 'Priya Patel',
+    review: 'The teaching style is simple and practical. I learned a lot!',
+    img: 'https://randomuser.me/api/portraits/women/2.jpg',
+  },
+  {
+    id: 3,
+    name: 'Rohan Mehta',
+    review:
+      'Best decision to join RSDM! It made digital marketing easy for me.',
+    img: 'https://randomuser.me/api/portraits/men/3.jpg',
+  },
+  {
+    id: 4,
+    name: 'Sneha Verma',
+    review:
+      'I came with zero knowledge, and now I can confidently manage campaigns!',
+    img: 'https://randomuser.me/api/portraits/women/4.jpg',
+  },
+  {
+    id: 5,
+    name: 'Vikram Singh',
+    review: 'The trainers are supportive and make learning fun!',
+    img: 'https://randomuser.me/api/portraits/men/5.jpg',
+  },
+  {
+    id: 6,
+    name: 'Ananya Nair',
+    review: 'I got real-time project experience, which boosted my confidence.',
+    img: 'https://randomuser.me/api/portraits/women/6.jpg',
+  },
+  {
+    id: 7,
+    name: 'Rahul Khanna',
+    review:
+      'Highly recommend RSDM to anyone who wants to grow in digital marketing!',
+    img: 'https://randomuser.me/api/portraits/men/7.jpg',
+  },
+  {
+    id: 8,
+    name: 'Meera Joshi',
+    review:
+      'Great environment and practical sessions. Learning was smooth and fun!',
+    img: 'https://randomuser.me/api/portraits/women/8.jpg',
+  },
+  {
+    id: 9,
+    name: 'Siddharth Malhotra',
+    review: 'Not just theory—actual skills that I can apply in my career!',
+    img: 'https://randomuser.me/api/portraits/men/9.jpg',
+  },
+  {
+    id: 10,
+    name: 'Kavita Iyer',
+    review:
+      'RSDM helped me learn digital marketing and start my freelancing career!',
+    img: 'https://randomuser.me/api/portraits/women/10.jpg',
+  },
+  {
+    id: 11,
+    name: 'Amit Bansal',
+    review:
+      'The skills I learned here helped me get my first freelance client.',
+    img: 'https://randomuser.me/api/portraits/men/11.jpg',
+  },
+  {
+    id: 12,
+    name: 'Pooja Rao',
+    review:
+      'Now I can work from anywhere and earn as a freelancer, thanks to RSDM!',
+    img: 'https://randomuser.me/api/portraits/women/12.jpg',
+  },
+];
 
 const Testimonial = () => {
   const [testimonials, setTestimonials] = useState([]);

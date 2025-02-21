@@ -39,7 +39,7 @@ const Stats = () => {
         />
         <StatCard
           IconComponent={FaBuilding}
-          count={40}
+          count={5}
           suffix='+'
           description='Experienced Faculty'
         />
@@ -51,7 +51,7 @@ const Stats = () => {
         />
         <StatCard
           IconComponent={FaHandshakeAngle}
-          count={700}
+          count={500}
           suffix='+'
           description='Placements Partners'
         />

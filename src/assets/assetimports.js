@@ -13,7 +13,7 @@ import bgImg from './bgimg.png';
 import bgVid from './bgvid.mp4';
 import l5 from './Bhagirath Marble.png';
 import certi from './certi.svg';
-import certificate from './cirtificate.webp';
+import certificate from './certificate.png';
 import cohortP from './cohortP.svg';
 import l6 from './Devangi Didi.png';
 import image3 from './Devangi Ladola.jpg';
@@ -95,7 +95,7 @@ import Tool7 from './Tool7.svg';
 import Tool8 from './Tool8.svg';
 import Tool9 from './Tool9.svg';
 import l27 from './Tradeindia.png';
-import welcome from './welcome.avif';
+import welcome from './welcome.jpg';
 import l28 from './WhatsApp Image 2024-12-16 at 19.32.08_009bfb6d.jpg';
 
 export const assets = {

@@ -19,7 +19,7 @@ const Hero = () => {
           <p className='mt-4 text-lg md:text-xl lg:text-2xl'>
             We have trained more than{' '}
             <span>
-              <CountUp start={0} end={10000} />+
+              <CountUp start={0} end={500} />+
             </span>{' '}
             students, and we take immense pride in shaping them.
           </p>

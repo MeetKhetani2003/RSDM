@@ -21,7 +21,7 @@ const Certificate = () => {
               Scored 60% in the assignments
             </p>
           </div>
-          <div>
+          <div className='w-1/2'>
             <img src={assets.certificate} alt='cc' />
           </div>
         </div>

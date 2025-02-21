@@ -18,7 +18,7 @@ const AboutCourse = () => {
   return (
     <div>
       <h1 className='w-full mx-auto text-center font-semibold font-dmSans my-10 text-4xl'>
-        About Our Course
+        Professional Certification Program in Digital Marketing & Strategy
       </h1>
       <div className='max-w-7xl gap-8 mx-auto flex flex-col px-4 md:flex-row items-center'>
         <div className='flex-1'>

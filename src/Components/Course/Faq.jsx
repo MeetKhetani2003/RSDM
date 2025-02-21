@@ -1,3 +1,4 @@
+/* eslint-disable no-irregular-whitespace */
 import {
   Accordion,
   AccordionContent,
@@ -8,61 +9,63 @@ import React from 'react';
 
 const faqItems = [
   {
-    question: '1.	What is this course about, and who is it for?',
-    answer: 'Yes. It adheres to the WAI-ARIA design pattern.',
+    question: '1 What digital marketing courses do you offer?',
+    answer:
+      'List your courses, specializations, and any beginner/advanced levels. Link to course pages for details.',
   },
   {
-    question: '2.	What are the prerequisites for enrolling in this course? ',
+    question: '2 What are the prerequisites for your courses?',
     answer:
-      "Yes. It comes with default styles that matches the other components' aesthetic.",
+      'pecify any required educational background, technical skills, or prior experience.',
   },
   {
-    question: '3.	Is this course suitable for beginners?',
+    question: '3.	What is the duration of your courses?',
     answer:
-      "Yes. It's animated by default, but you can disable it if you prefer.",
+      'Clearly state the length of each course, including online/offline formats and any flexible scheduling options.',
   },
   {
-    question: '4.	What topics and tools are covered in the course?',
+    question: '4.	What are the fees for your courses?',
     answer:
-      "Yes. It comes with default styles that matches the other components' aesthetic.",
+      'Provide a clear fee structure for each course, including payment plans, discounts, or financial aid options.  Consider linking to a fee schedule page.',
   },
   {
-    question:
-      '5.	What is the duration of the course, and how much time should I dedicate weekly?',
+    question: '5.	Do you offer online or in-person classes, or both?',
     answer:
-      "Yes. It's animated by default, but you can disable it if you prefer.",
+      'Specify the available learning formats and highlight the benefits of each.',
   },
   {
-    question:
-      '6.	What is the learning format? Are sessions live, recorded, or hybrid?',
+    question: '6.	Do you provide placement assistance after course completion?',
     answer:
-      "Yes. It comes with default styles that matches the other components' aesthetic.",
-  },
-  {
-    question: '7.	Does the course include projects or assignments?',
-    answer:
-      "Yes. It's animated by default, but you can disable it if you prefer.",
-  },
-  {
-    question: '8.	Is the certification verifiable by employers?',
-    answer:
-      "Yes. It comes with default styles that matches the other components' aesthetic.",
-  },
-  {
-    question: '9.	Does this course provide job assistance?',
-    answer:
-      "Yes. It's animated by default, but you can disable it if you prefer.",
-  },
-  {
-    question: '10.	What is the course fee?',
-    answer:
-      "Yes. It comes with default styles that matches the other components' aesthetic.",
+      'Detail your placement support, including career counseling, resume building, interview preparation, and connections with potential employers.  Be realistic and transparent about placement rates.',
   },
   {
     question:
-      '11.	How can I get help if I have questions or face technical issues?',
+      '7.	What are the career opportunities after completing a digital marketing course? ',
     answer:
-      "Yes. It's animated by default, but you can disable it if you prefer.",
+      'List potential job roles like SEO Specialist, Social Media Manager, Content Marketer, etc., and mention industry demand.',
+  },
+  {
+    question:
+      '8.	What is the average salary one can expect after completing a digital marketing course? ',
+    answer:
+      "While you can't guarantee salaries, provide realistic salary ranges based on industry data and experience levels.  Avoid misleading promises.",
+  },
+  {
+    question:
+      '9. What are the qualifications and experience of your instructors?',
+    answer:
+      "Showcase your instructors' expertise and credentials to build trust and credibility.",
+  },
+  {
+    question:
+      '10.	What makes your digital marketing institute different from others? ',
+    answer:
+      ' Highlight your unique selling points, such as specialized curriculum, practical training, industry partnerships, or alumni network.',
+  },
+  {
+    question:
+      '11.	 How do your courses prepare students for the latest trends in digital marketing, such as AI, automation, and evolving platform algorithms?',
+    answer: `This is essential right now.  Explain how your curriculum stays current.  Mention specific modules, guest lectures from industry experts, case studies on recent campaigns, or hands-on experience with relevant tools.  Emphasize your focus on adapting to the rapidly changing digital landscape.  For example: "Our curriculum is constantly updated to reflect the latest advancements. We incorporate modules on AI-driven marketing tools, marketing automation strategies, and the impact of algorithm updates on SEO and social media.  We also invite guest speakers from leading agencies to share their insights on emerging trends."  This demonstrates your institute's commitment to providing cutting-edge education.`,
   },
 ];
 
