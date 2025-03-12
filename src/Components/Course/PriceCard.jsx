@@ -54,7 +54,7 @@ const PriceCard = () => {
 
   return (
     <div className='max-w-4xl mx-auto px-4 py-8'>
-      <h1 className='text-4xl font-dmSans text-center font-semibold p-10'>
+      <h1 className='text-4xl text-blue-950 font-dmSans text-center font-semibold p-10'>
         Choose Your Plan
       </h1>
       <div className='flex flex-col md:flex-row md:gap-10 justify-center items-center space-y-8 md:space-y-0'>

@@ -11,61 +11,61 @@ const faqItems = [
   {
     question: '1 What digital marketing courses do you offer?',
     answer:
-      'List your courses, specializations, and any beginner/advanced levels. Link to course pages for details.',
+      'RSDM offers comprehensive digital marketing courses covering SEO, social media marketing, Google Ads, content marketing, email marketing, analytics, and more. We provide both beginner and advanced courses tailored for students, job seekers, professionals, and entrepreneurs.  ',
   },
   {
     question: '2 What are the prerequisites for your courses?',
     answer:
-      'pecify any required educational background, technical skills, or prior experience.',
+      'There are no strict prerequisites. Anyone with a passion for digital marketing can enroll. Basic computer and internet knowledge can be helpful but is not mandatory.',
   },
   {
     question: '3.	What is the duration of your courses?',
     answer:
-      'Clearly state the length of each course, including online/offline formats and any flexible scheduling options.',
+      'Our courses range from *2 months to 6 months*, depending on the level and depth of the program. We offer flexible schedules to accommodate students and working professionals.  ',
   },
   {
     question: '4.	What are the fees for your courses?',
     answer:
-      'Provide a clear fee structure for each course, including payment plans, discounts, or financial aid options.  Consider linking to a fee schedule page.',
+      'Our course fees vary based on the program selected. Please visit our website or contact us for detailed fee structures and payment options.  ',
   },
   {
     question: '5.	Do you offer online or in-person classes, or both?',
     answer:
-      'Specify the available learning formats and highlight the benefits of each.',
+      'We offer both *in-person* classes at our Rajkot institute and *online* courses for those who prefer flexible learning options.  ',
   },
   {
     question: '6.	Do you provide placement assistance after course completion?',
     answer:
-      'Detail your placement support, including career counseling, resume building, interview preparation, and connections with potential employers.  Be realistic and transparent about placement rates.',
+      'Yes, RSDM provides *placement assistance*, including resume building, interview preparation, and job referrals, to help students secure positions in top companies. ',
   },
   {
     question:
       '7.	What are the career opportunities after completing a digital marketing course? ',
     answer:
-      'List potential job roles like SEO Specialist, Social Media Manager, Content Marketer, etc., and mention industry demand.',
+      'Graduates can explore roles such as *Digital Marketing Specialist, SEO Analyst, Social Media Manager, PPC Expert, Content Marketer, Email Marketing Specialist, and Digital Marketing Consultant* in various industries.  ',
   },
   {
     question:
       '8.	What is the average salary one can expect after completing a digital marketing course? ',
     answer:
-      "While you can't guarantee salaries, provide realistic salary ranges based on industry data and experience levels.  Avoid misleading promises.",
+      'Entry-level digital marketers can expect salaries starting from *₹3-5 LPA, while experienced professionals can earn *₹8-15 LPA or more**, depending on expertise and location. Freelancers can also earn substantial income through projects.  ',
   },
   {
     question:
       '9. What are the qualifications and experience of your instructors?',
     answer:
-      "Showcase your instructors' expertise and credentials to build trust and credibility.",
+      'Our instructors are *industry experts* with *years of experience* in digital marketing, having worked on real-world campaigns for top brands. They bring hands-on knowledge and insights into the latest industry trends.  ',
   },
   {
     question:
       '10.	What makes your digital marketing institute different from others? ',
     answer:
-      ' Highlight your unique selling points, such as specialized curriculum, practical training, industry partnerships, or alumni network.',
+      'RSDM stands out with its *practical approach, expert mentorship, hands-on projects, state-of-the-art facilities, placement support, and industry-relevant curriculum* designed to help students succeed in real-world scenarios.  ',
   },
   {
     question:
       '11.	 How do your courses prepare students for the latest trends in digital marketing, such as AI, automation, and evolving platform algorithms?',
-    answer: `This is essential right now.  Explain how your curriculum stays current.  Mention specific modules, guest lectures from industry experts, case studies on recent campaigns, or hands-on experience with relevant tools.  Emphasize your focus on adapting to the rapidly changing digital landscape.  For example: "Our curriculum is constantly updated to reflect the latest advancements. We incorporate modules on AI-driven marketing tools, marketing automation strategies, and the impact of algorithm updates on SEO and social media.  We also invite guest speakers from leading agencies to share their insights on emerging trends."  This demonstrates your institute's commitment to providing cutting-edge education.`,
+    answer: `We continuously update our curriculum to include *AI-driven marketing, automation tools, evolving SEO & social media algorithms, and data-driven strategies* to ensure our students stay ahead in the ever-changing digital landscape. `,
   },
 ];
 
@@ -83,7 +83,7 @@ const FaqItem = ({ question, answer }) => (
 export function Faq({ items = faqItems }) {
   return (
     <div className='py-8 px-4'>
-      <h1 className='text-center text-4xl font-semibold font-openSans my-8'>
+      <h1 className='text-center text-blue-950 text-4xl font-semibold font-openSans my-8'>
         Frequently Asked Questions
       </h1>
       <Accordion

@@ -31,7 +31,7 @@ const Freelancers = () => {
 
   return (
     <div className='relative overflow-hidden max-w-7xl mx-auto py-8'>
-      <h2 className='text-4xl font-dmSans font-semibold text-center py-6'>
+      <h2 className='text-4xl text-blue-950 font-dmSans font-semibold text-center py-6'>
         Stundents As a Freelancer
       </h2>
       <Carousel

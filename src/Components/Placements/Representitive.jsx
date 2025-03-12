@@ -6,7 +6,7 @@ const Representitive = () => {
   return (
     <div className='max-w-7xl mx-auto px-4 space-y-4 mt-10'>
       <div>
-        <h1 className='text-4xl font-dmSans font-semibold text-center'>
+        <h1 className='text-4xl text-blue-950 font-dmSans font-semibold text-center'>
           Our Regular Recruiters(Representative List)
         </h1>
       </div>

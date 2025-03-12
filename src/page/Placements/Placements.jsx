@@ -21,27 +21,22 @@ const Placements = () => {
           Institute in Rajkot
         </h1>
         <p className='text-sm mt-6 font-monsterate text-gray-600 text-wrap'>
-          In today&apos;s fast-paced digital era, the demand for skilled digital
-          marketers is at an all-time high. As businesses worldwide embrace
-          digital transformation, there&apos;s an unprecedented need for
-          professionals who can navigate the complexities of online marketing,
-          drive growth, and propel brands to success in the digital landscape.
-          In this dynamic environment, choosing the right digital marketing
-          institute becomes paramount to securing a promising career trajectory.
-          Welcome to RSDM – the premier Digital Marketing Institute in Rajkot,
-          where we empower individuals with the knowledge, skills, and industry
-          insights to thrive in the ever-evolving world of digital marketing.
+          In today’s digital age, skilled marketers are in high demand as
+          businesses embrace online transformation. Success now depends on
+          experts who can navigate digital marketing, drive growth, and build
+          strong brands. Choosing the right institute is key to launching a
+          thriving career.
         </p>
         <p className='text-sm mt-4 font-monsterate text-gray-600 text-wrap'>
-          Established with a vision to bridge the gap between academia and
-          industry, RSDM stands as a beacon of excellence in digital marketing
-          education. With a rich legacy of nurturing talent and shaping futures,
-          RSDM has emerged as the preferred destination for aspiring digital
-          marketers seeking to carve a niche for themselves in the competitive
-          digital arena. Our unwavering commitment to delivering quality
-          education, coupled with industry-relevant curriculum and hands-on
-          training, sets us apart as a leader in the field of digital marketing
-          education.
+          Welcome to RSDM, Rajkot’s premier Digital Marketing Institute, where
+          we equip individuals with cutting-edge skills, industry insights, and
+          hands-on expertise to excel in this dynamic field.
+        </p>
+        <p className='text-sm mt-4 font-monsterate text-gray-600 text-wrap'>
+          With a mission to bridge the gap between academia and industry, RSDM
+          stands as a leader in digital marketing education. Our industry-driven
+          curriculum, expert-led training, and commitment to excellence make us
+          the top choice for aspiring digital marketers.
         </p>
       </div>
       <TopPlacements />

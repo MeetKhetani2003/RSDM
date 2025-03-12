@@ -53,7 +53,7 @@ const Hero = () => {
               belong to RSDM.
             </p>
             <p className='text-base md:text-lg'>
-              7000+ Placement Delivered | 100+ Active Placement Partners | 3
+              150+ Placement Delivered | 500+ Active Placement Partners | 3
               Layer Placement Process
             </p>
             <button className='mt-4 bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md transition duration-200'>

@@ -17,7 +17,7 @@ const AboutCourse = () => {
   const navigate = useNavigate();
   return (
     <div>
-      <h1 className='w-full mx-auto text-center font-semibold font-dmSans my-10 text-4xl'>
+      <h1 className='w-full text-blue-950 mx-auto text-center font-semibold font-dmSans my-10 text-4xl'>
         Professional Certification Program in Digital Marketing & Strategy
       </h1>
       <div className='max-w-7xl gap-8 mx-auto flex flex-col px-4 md:flex-row items-center'>
@@ -26,16 +26,7 @@ const AboutCourse = () => {
         </div>
         <div className='font-monsterate text-gray-600 text-wrap text-justify space-y-4 md:w-1/2 text-base font-medium'>
           <p>
-            {`RSDM offers Rajkot's best digital marketing course, empowering
-            students, professionals, and entrepreneurs to thrive in today's
-            booming digital landscape. Our cutting-edge curriculum provides
-            in-depth training in SEO, social media marketing, Google Ads,
-            content marketing, and more, equipping students for high-demand
-            careers, professionals for career advancement, and entrepreneurs for
-            measurable business growth. Gain practical skills and
-            industry-relevant knowledge to confidently launch successful
-            campaigns, scale businesses, or secure well-paying jobs in
-            this dynamic field.`}
+            {`Welcome to RSDM Institute, Rajkot’s leading digital marketing academy, empowering individuals with industry-focused education since 2025. We blend innovation, hands-on learning, and expert-led training to equip students, job seekers, and professionals with in-demand skills. With state-of-the-art facilities and practical courses, RSDM prepares you for career success, business growth, and real-world challenges. Join us and take the first step toward a brighter future!`}
           </p>
           <div>
             <h2 className='text-xl py-3 font-semibold'>

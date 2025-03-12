@@ -44,7 +44,7 @@ const Navbar = () => {
     <div className='sticky top-0 z-50 bg-white shadow-md'>
       <div className='flex items-center justify-between max-h-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4'>
         {/* Logo */}
-        <div className='w-24'>
+        <div className='w-32'>
           <img src={assets.logo} alt='logo' />
         </div>
 

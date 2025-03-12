@@ -23,7 +23,7 @@ const ContactForm = ({ onSubmit }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const response = await axios.post(
-      'http://localhost:3000/api/v1/contacts/create',
+      'https://rsdmserver.onrender.com/api/v1/contacts/create',
       formData
     );
     toast({

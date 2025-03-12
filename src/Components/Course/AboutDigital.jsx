@@ -48,7 +48,7 @@ const AboutDigital = () => {
   return (
     <div className='bg-white py-8 px-4'>
       <div className='max-w-7xl mx-auto '>
-        <h1 className='text-4xl font-extrabold font-dmSans leading-snug text-gray-900 text-center my-7 md:my-14'>
+        <h1 className='text-4xl text-blue-950 font-extrabold font-dmSans leading-snug  text-center my-7 md:my-14'>
           About Digital Marketing With Ai
         </h1>
         <div className='flex flex-col-reverse md:flex-row items-center justify-center px-4 md:px-8'>
@@ -112,7 +112,7 @@ const AboutDigital = () => {
         <div className='flex flex-col md:flex-row gap-6 py-8'>
           <StatCard
             IconComponent={FcBriefcase}
-            count={200}
+            count={500}
             suffix='+'
             description='Hiring Partners'
           />
@@ -125,7 +125,7 @@ const AboutDigital = () => {
           />
           <StatCard
             IconComponent={FcMoneyTransfer}
-            count={5}
+            count={6}
             suffix='LPA'
             description='Highest Package'
           />

@@ -5,7 +5,7 @@ import HeroVideoDialog from '../ui/hero-video-dialog';
 const TestimonialVideos = () => {
   return (
     <div className='relative max-w-7xl mx-auto px-4 mt-20'>
-      <h1 className='text-center text-4xl font-dmSans font-semibold my-10'>
+      <h1 className='text-center text-4xl text-blue-950 font-dmSans font-semibold my-10'>
         Our Students Testimonial Videos
       </h1>
       <div className='grid md:grid-cols-2 '>

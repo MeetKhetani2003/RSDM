@@ -39,7 +39,7 @@ const DialogForm = ({ from, closeDialog }) => {
 
   return (
     <form onSubmit={handleSubmit} className='md:space-y-6 space-y-3 w-full'>
-      <h2 className='text-2xl font-semibold text-gray-800 text-center'>
+      <h2 className='text-2xl font-semibold text-blue-950 text-center'>
         Drop Your Inquiry & Get Free Demo Details
       </h2>
 

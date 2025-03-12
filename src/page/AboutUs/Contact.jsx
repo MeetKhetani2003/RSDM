@@ -54,7 +54,7 @@ const ContactUs = () => {
       setIsSubmitting(true);
       try {
         await axios.post(
-          'http://localhost:3000/api/v1/contacts/create',
+          'https://rsdmserver.onrender.com/api/v1/contacts/create',
           formData
         );
         toast({
@@ -104,8 +104,8 @@ const ContactUs = () => {
           textAlign: 'center',
         }}
       >
-        We&apos;d love to hear from you! Fill out the form and we&apos;ll get back to
-        you shortly.
+        We&apos;d love to hear from you! Fill out the form and we&apos;ll get
+        back to you shortly.
       </Typography>
       <Grid
         container

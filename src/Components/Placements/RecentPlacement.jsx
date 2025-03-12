@@ -31,7 +31,7 @@ const RecentPlacement = () => {
 
   return (
     <div className='relative overflow-hidden max-w-7xl mx-auto py-8 my-6'>
-      <h2 className='text-4xl font-dmSans font-semibold text-center py-9'>
+      <h2 className='text-4xl font-dmSans text-blue-950 font-semibold text-center py-9'>
         Recent Placemets
       </h2>
       <Carousel
@@ -52,7 +52,7 @@ const RecentPlacement = () => {
                 <img
                   src={image}
                   alt={`Placement ${index + 1}`}
-                  className='w-full  object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300'
+                  className='w-full h-[370px] object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300'
                 />
               </div>
             </CarouselItem>

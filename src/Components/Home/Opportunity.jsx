@@ -120,6 +120,7 @@ const Opportunity = () => {
     <StyledContainer>
       <Box my={4}>
         <Typography
+          className='text-blue-950'
           variant='h4'
           style={{ textAlign: 'center' }}
           component='h1'

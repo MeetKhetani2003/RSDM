@@ -30,7 +30,7 @@ const Hero = () => {
             </span>
           </div>
 
-          <h1 className='text-4xl font-extrabold font-dmSans leading-snug text-gray-900'>
+          <h1 className='text-4xl font-extrabold font-dmSans leading-snug text-blue-950'>
             Professional Certification Program in Digital Marketing & Strategy
           </h1>
 

@@ -50,10 +50,11 @@ export function Projects() {
     <div className='max-w-7xl mx-auto px-4'>
       <p className='font-semibold font-monsterate text-xl my-6'>
         Our digital marketing training program is completely{' '}
-        <strong>Industry-led </strong> and task oriented. Multiple{' '}
-        <strong>Case studies </strong>
-        and <strong>live projects</strong> providing practical inside and
-        helping effective strategies.
+        <strong className='text-blue-950'>Industry-led </strong> and task
+        oriented. Multiple{' '}
+        <strong className='text-blue-950'>Case studies </strong>
+        and <strong className='text-blue-950'>live projects</strong> providing
+        practical inside and helping effective strategies.
       </p>
       <section className='flex flex-wrap gap-8 justify-center p-8'>
         {projects.map((benefit, index) => (

@@ -6,7 +6,7 @@ const Certificate = () => {
   return (
     <div className='max-w-7xl mx-auto my-8 md:my-10 px-4 py-16'>
       <div className='space-y-4'>
-        <h1 className='text-3xl font-bold text-center flex items-center'>
+        <h1 className='text-3xl text-blue-950 font-bold text-center flex items-center'>
           <img className='h-14' src={assets.certi} /> Get Certified
         </h1>
         <div className='flex items-center md:flex-row flex-col '>
@@ -21,7 +21,7 @@ const Certificate = () => {
               Scored 60% in the assignments
             </p>
           </div>
-          <div className='w-1/2'>
+          <div className='w-1/3'>
             <img src={assets.certificate} alt='cc' />
           </div>
         </div>

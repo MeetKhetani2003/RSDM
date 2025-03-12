@@ -6,7 +6,7 @@ const Tools = () => {
   return (
     <div>
       <div className='leading-10'>
-        <h1 className='w-full mx-auto text-center font-semibold font-dmSans mt-10 text-4xl'>
+        <h1 className='w-full mx-auto text-blue-950 text-center font-semibold font-dmSans mt-10 text-4xl'>
           Master digital marketing tools like...
         </h1>
         <p className='font-monsterate text-center mb-10'>

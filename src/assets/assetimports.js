@@ -1,3 +1,5 @@
+import tm2 from './1741.jpg';
+import tm3 from './2844.jpg';
 import image1 from './Abhi Vadaliya.jpg';
 import l1 from './Abhi Vadaliya.png';
 import about from './about.jpeg';
@@ -117,6 +119,8 @@ export const assets = {
   Tool7,
   Tool8,
   Tool9,
+  tm2,
+  tm3,
   Tool10,
   digital2,
   mt1,

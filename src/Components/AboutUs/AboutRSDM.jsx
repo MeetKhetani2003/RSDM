@@ -8,19 +8,13 @@ const AboutRSDM = () => {
       <h1 className='text-center font-semibold text-4xl py-10'>About RSDM</h1>
       <div className='flex md:flex-row flex-col items-center justify-center gap-8'>
         <div className='h-full'>
-          <img className='md:w-[200rem]' src={assets.aboutus} alt='ab' />
+          <img className='md:w-[85rem]' src={assets.aboutus} alt='ab' />
         </div>
         <div>
           {[
-            `Established as a beacon of excellence in the heart of Rajkot, RSDM
-          - the Rajkot School of Digital Marketing - stands as a premier
-          institute dedicated to shaping the digital marketing leaders of
-          tomorrow. With a commitment to delivering top-tier education and
-          practical skills, RSDM has earned a reputation as a trusted
-          institution for individuals seeking to thrive in the fast-paced world
-          of digital marketing.`,
-            `At RSDM, we believe in the transformative power of education. That's why our Digital Marketing institute in Rajkot is designed to provide students with a comprehensive learning experience that goes beyond the classroom. From industry-relevant curriculum to hands-on training, we equip our students with the knowledge, skills, and confidence needed to succeed in today's competitive marketplace.`,
-            `One of the hallmarks of RSDM is our team of experienced instructors who bring a wealth of real-world expertise to the classroom. Passionate about their craft and dedicated to student success, our instructors go above and beyond to provide personalized guidance, mentorship, and support. With their guidance, students gain invaluable insights into the latest trends, tools, and techniques in digital marketing, ensuring they graduate with the skills needed to excel in their careers.`,
+            `Located in the heart of Rajkot, RSDM is a premier institute dedicated to shaping future digital marketing leaders. With a strong focus on practical skills and industry-driven education, we empower individuals to thrive in the fast-evolving digital landscape.  `,
+            `At RSDM, learning goes beyond the classroom. Our expert-led training, hands-on approach, and industry-relevant curriculum equip students with the skills and confidence needed to excel in today’s competitive market.  `,
+            `What sets us apart is our team of experienced instructors, who bring real-world expertise and personalized mentorship. With their guidance, students gain deep insights into the latest trends and tools, ensuring they graduate job-ready and future-proof.`,
           ].map((item, i) => (
             <div key={i} style={{ marginBottom: 20 }}>
               <p className='text-gray-800 font-monsterate text-sm'>{item}</p>

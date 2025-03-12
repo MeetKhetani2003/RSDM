@@ -32,23 +32,23 @@ const CourseOfferings = () => {
       icon: 'https://cdn.pwskills.com/assets/uploads/course_offering_icons/660bc48f9709e6db38248923.svg',
       title: 'Certificate',
     },
-    {
-      icon: 'https://cdn.pwskills.com/assets/uploads/course_offering_icons/6619229c5a3fe9709f9527b7.svg',
-      title: 'Mail Support',
-    },
+    // {
+    //   icon: 'https://cdn.pwskills.com/assets/uploads/course_offering_icons/6619229c5a3fe9709f9527b7.svg',
+    //   title: 'Mail Support',
+    // },
     {
       icon: 'https://cdn.pwskills.com/assets/uploads/course_offering_icons/55c09844-f867-4c14-b1a2-ca38eae319d5.webp',
       title: 'Job Assistance',
     },
-    {
-      icon: 'https://cdn.pwskills.com/assets/uploads/course_offering_icons/fe29f1c6-6589-448d-bd13-5f1a23e1b752.jpeg',
-      title: 'Community Channel',
-    },
+    // {
+    //   icon: 'https://cdn.pwskills.com/assets/uploads/course_offering_icons/fe29f1c6-6589-448d-bd13-5f1a23e1b752.jpeg',
+    //   title: 'Community Channel',
+    // },
   ];
 
   return (
     <div className='container max-w-7xl mx-auto py-8 px-4'>
-      <h2 className='text-4xl font-dmSans font-bold text-center mb-8'>
+      <h2 className='text-4xl text-blue-950 font-dmSans font-bold text-center mb-8'>
         Course Offerings
       </h2>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 border-t border-l border-gray-200'>
