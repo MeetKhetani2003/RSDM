@@ -78,7 +78,7 @@ import p6 from './p6.jpg';
 import p7 from './p7.avif';
 import p8 from './p8.jpg';
 import tm1 from './portrait-smiling-man-with-adhesive-notes-suit-standing-against-white-background_1048944-12071107.avif';
-import representitive from './representitives.webp';
+import representitive from './representitives.png';
 import sb from './sb.png';
 import l23 from './Sharekhan.png';
 import startup from './startup.png';
